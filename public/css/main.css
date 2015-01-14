@@ -3,31 +3,34 @@ body {
 	margin: 0;
 }
 
+.pipe {  /* stuff for styling those pipe separated lists */
+
+}
+
 /*  Top and bottom colored background areas */
 
 .top_background_body {
- 
+	background-color: #D6F1F0;
+
 }
 
 .top_background_body ul {  /*  sign in & sign up text */
- 
+	color: 5FAEB4;
 }
 
 .bottom_background_body  {
-
-
+	background-color: 77CCD2;
 }
 
 .bottom_background_body ul {
-
+	color: #B7E4E5;
 
 }
 
 /*  All of the white stuff */
 
 .container {  
-
-
+	background-color: #fff;
 }
 
 .logo  {
@@ -47,8 +50,9 @@ body {
 
 /*  Left side of bottom white part */
 
-form {
-
+form .search {
+	background-color: ECFAD3;
+	color: 88B737;
 
 }
 
@@ -56,15 +60,15 @@ form {
 /*  Right Top of bottom white part */
 
 .file_path {
-
+	color: 88B737;
 }
 
 .sort {
-
+	color: 88B737;
 }
 
 .gallery_nav {
-
+	color: 88B737;
 }
 
 /* Right Bottom of bottom white part */
@@ -74,15 +78,29 @@ form {
 }
 
 .gallery_caption {
-	
+	color: 88B737;
 }
 
 
 /* Middle Overlay Nav Bar */
 
 .nav_bar {
+	background-color: #F5CAD2;
+	color: 8D3967;
 
 }
+
+.button {
+
+}
+
+
+/*    Stuff we might need:
+
+TAGLINE IMAGE:  https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png
+SPYGLASS IMAGE: https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/search.gif
+
+
 
 
 
