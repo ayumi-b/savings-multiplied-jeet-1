@@ -9,5 +9,8 @@
   "description": "Molly and Katye's Jeet Project",
   "main": "savings-multiplied-jeet",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "jeet": "~6.1.2"
+  }
 }
