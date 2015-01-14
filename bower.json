@@ -1,0 +1,13 @@
+{
+  "name": "savings-multiplied-jeet",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mollytaryn/savings-multiplied-jeet",
+  "authors": [
+    "Molly Black <mollytaryn@gmail.com>",
+    "Katye Russell <katye.russell@gmail.com>"
+  ],
+  "description": "Molly and Katye's Jeet Project",
+  "main": "savings-multiplied-jeet",
+  "license": "MIT",
+  "private": true
+}
