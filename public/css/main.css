@@ -134,10 +134,6 @@
 h1 {
   color: #ABC123; }
 
-body {
-  background-color: #D6F1F0;
-  font-family: Tahoma, Helvetica, Arial, sans-serif; }
-
 .top_teal {
   *zoom: 1;
   width: auto;
@@ -238,7 +234,7 @@ li {
       margin-right: 0%; }
     .top_white .tw_2 ul {
       *zoom: 1;
-      padding: 80px 0px 0px 0px; }
+      padding: 40px 0px 0px 0px; }
       .top_white .tw_2 ul:before, .top_white .tw_2 ul:after {
         content: '';
         display: table; }
@@ -256,7 +252,7 @@ li {
       display: inline-block;
       font-family: Arial;
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 18px;
       color: #5FAEB4;
       text-align: center;
       border-radius: 50px 50px 50px 50px;
@@ -299,7 +295,7 @@ li {
     .top_white .tw_3 img {
       max-width: 450px;
       max-height: auto;
-      padding: 25px 0px 0px 8px; }
+      padding: 10px 0px 0px 8px; }
 
 .pink_bar {
   *zoom: 1;
