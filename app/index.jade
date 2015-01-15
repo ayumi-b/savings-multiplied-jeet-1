@@ -1,80 +1,48 @@
 doctype html
 html(lang="en-US")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title My Title
-    link(rel="stylesheet" href="css/main.css")
+head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  link(rel="stylesheet", href="css/main.css")
+
+  // Div class top_row is the top section in light teal
 
   body
-    background
-      .top_background_body.pipe
+    .top_row
+      ul
+        li Sign Up  
+        li |  
+        li Sign In
+
+    // This is the white part above the pink nav bar
+
+    .top_white
+
+      .tw_1
+
+      .tw_2
+        img(src='https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png')
+
+      .tw_3
         ul
-          li sign in |
-          li  sign up
-      .bottom_background_body.pipe
-        ul
-          li link here
-          li link here
-          li link here
-          li link here
-          li link here
-          li link here
-    container
-      img.logo(src='img/savings-multiplied-logo-no-tagline.png')
-      ul.buttons
-        li About
-        li Contact
-        li Blog
-        li Press
-      img.tagline(src='img/savings-multiplied-logo-tagline.png')
-      form.search
-        h6 List your search by:
-        input(type='text', name='search')
-        |         Condition:
-        br
-        input(type='radio', name='condition1', value='New Gently Used')
-        input(type='radio', name='condition2', value='Gently Used')
-        |         Size:
-        br
-        input(type='radio', name='size4', value='4')
-        input(type='radio', name='size5', value='5')
-        input(type='radio', name='size6', value='6')
-        input(type='radio', name='size7', value='7')
-        input(type='radio', name='size8', value='8')
-        input(type='radio', name='size9', value='9')
-        input(type='radio', name='size10', value='10')
-        input(type='radio', name='size11', value='11')
-        |         Season:
-        br
-        input(type='radio', name='all_seasons', value='All Seasons')
-        input(type='radio', name='spring', value='Spring')
-        input(type='radio', name='summer', value='Summer')
-        input(type='radio', name='fall', value='Fall')
-        input(type='radio', name='winter', value='Winter')
-        |         Type:
-        br
-        input(type='radio', name='any', value='Any')
-        input(type='radio', name='one_piece', value='One-Piece')
-        input(type='radio', name='tops', value='Tops')
-        input(type='radio', name='bottoms', value='Bottoms')
-        |         Brand:
-        br
-        select
-          option(value='gymboree') Gymboree
-          option(value='oshkosh') OshKosh
-          option(value='janie_and_jack') Janie and Jack
-      form.sort
-        | sort by:
-        br
-        select
-          option(value='price') Price
-          option(value='size') Size
-          option(value='color') Color
-        ul.gallery-nav.pipe
-          li prev.
-          li page num.
-          li next
-          li view all
-    script(src='js/main.js')
+          li About 
+          li Contact 
+          li Blog
+          li Press
+  
+        img(src='https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/tagline.png')
+
+      .tw_4
+
+    // This is the pink nav bar
+
+    .pink_bar
+      ul
+        li Buy 
+        li Sell  
+        li How it Works  
+        li Links
+        li Community 
+        li
+          input(type='button', name='Search')
