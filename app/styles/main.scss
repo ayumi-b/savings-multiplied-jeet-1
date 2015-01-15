@@ -8,12 +8,23 @@ body {
 }
 
 // Light Teal Section at Top 
-.top_row ul {
-  text-align: right;
+
+.top_teal{
+  @include col(8/8);
+  background-color: #D6F1F0;
+  padding: 85px 0px 2px 0px; 
+}
+
+.tt_1 {
+  @include col(6/8);
+}
+
+.tt_2 ul {
+  @include col(2/8);
   margin: 0px 200px 0px 0px;
 }
 
-.top_row li {
+.tt_2 li {
   list-style: none;
   display: inline;
   font-family: "Tahoma";
@@ -21,10 +32,6 @@ body {
   padding: 0px 5px 0px 0px;
 }
 
-.top_row {
-  background-color: #D6F1F0;
-  padding: 85px 0px 2px 0px; 
-}
 
 // White Section at the Top 
 
