@@ -10,91 +10,52 @@ body {
 // Light Teal Section at Top 
 
 .top_teal{
-  @include col(8/8);
+  @include center();
   background-color: #D6F1F0;
-  padding: 85px 0px 2px 0px; 
 }
 
-.tt_1 {
-  @include col(6/8);
+ ul {
+  @include col(3/4);
+  @include shift(1/8);
+  text-align: right;
 }
 
-.tt_2 ul {
-  @include col(2/8);
-  margin: 0px 200px 0px 0px;
-}
-
-.tt_2 li {
+li {
   list-style: none;
   display: inline;
   font-family: "Tahoma";
   color: #5FAEB4;
-  padding: 0px 5px 0px 0px;
 }
 
 
 // White Section at the Top 
 
-
-.tw_1 {
-  @include col(1/8);
-  background-color: #D6F1F0;
-  padding: 159px 0px 0px 0px;
-  color: #D6F1F0;
-  margin: 0px;
-}
-
-.tw_2 {
-  @include col(3.25/8);
-  border-radius: 50px 0 0 0;
-  padding: 0px 50px 0px 25px;
-  margin: 0px -10px 0px 0px;
-}
-
-.tw_3 {
-  @include col(2.75/8);
-  border-radius: 0 50px 0 0;
-  padding: 0px 25px 0px 0px;
-}
-
-.tw_4 {
-  @include col(1/8);
-  background-color: #D6F1F0;
-  padding: 159px 0px 0px 0px;
-  color: #D6F1F0;
-  margin: 0px;
-}
-
-.tw_2,
-.tw_3 {
-  margin: 0px;
+.top_white {
+  @include col(3/4);
+  @include shift(1/8);
+  @include cf();
   background-color: #fff;
+  border-radius: 50px 50px 0px 0px;
+  color: #D6F1F0;
 }
 
-.tw_3 img {
-  padding: 0px 0px 26px 0px;
-  margin: 0px 0px 0px -75px;
-  max-width: 450px;
-}
-
-.tw_2 img {
-  margin: -45px 0px 0px -10px;
+.top_white>img {
+  @include col(1/2);
 }
 
 .top_white ul {
-  @include center;
-  padding: 51px 0px 7px 0px;
+  margin: 0px;      //TO WIPE THE AUTO-ADDED UL TOP AND BOTTOM MARGINS OF 16
 }
 
-
 .top_white li {
+  
   list-style: none;
   display: inline;
   font-family: "Tahoma";
-  padding: 0px 10px;
   color: #5FAEB4;
 }
 
+   
 // Pink Nav Bar  
 
 .pink_bar {
@@ -104,16 +65,19 @@ body {
 }
 
 .pink_bar ul {
-  text-align: center;
   padding: 2px, 2px;
-  margin: 10px 20px;
+  text-align: center;
 }
 
 .pink_bar li {
   list-style: none;
   display: inline;
+
   padding: 2px, 10px, 2px 10px;
-  font-family: "Tahoma";
+  margin: 0px 25px;
+  font-family: 'Corben', Georgia, Times, serif;
+  font-size: 12px;
+  color: #6E0F47;
 }
 
 
