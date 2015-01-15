@@ -134,57 +134,148 @@
 h1 {
   color: #ABC123; }
 
-body {
-  margin: 0; }
-
-.top_background_body {
+.main_body {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 31.3333333333%;
+  width: 100%;
   margin-left: 0%;
   margin-right: 3%;
-  background-color: #D6F1F0; }
-  .top_background_body:before, .top_background_body:after {
+  position: relative;
+  max-width: 1200px; }
+  .main_body:before, .main_body:after {
     content: '';
     display: table; }
-  .top_background_body:after {
+  .main_body:after {
     clear: both; }
-  .top_background_body:last-child {
+  .main_body:last-child {
     margin-right: 0%; }
 
-.top_background_body ul {
-  color: #5FAEB4; }
+.main_body__header {
+  background-color: lightblue;
+  padding-top: 40px;
+  margin-bottom: -18px; }
+  .main_body__header .header ul {
+    list-style-type: none;
+    display: inline;
+    padding-left: 900px; }
+    .main_body__header .header ul li {
+      display: inline-block; }
 
-.bottom_background_body {
-  background-color: #77CCD2; }
+.content_header__wrapper {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background-color: lightblue; }
+  .content_header__wrapper:before, .content_header__wrapper:after {
+    content: '';
+    display: table; }
+  .content_header__wrapper:after {
+    clear: both; }
+  .content_header__wrapper:last-child {
+    margin-right: 0%; }
 
-.bottom_background_body ul {
-  color: #B7E4E5; }
+.content_header {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 82.8333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background-color: white;
+  margin-left: 100px;
+  border-radius: 10px 10px 0 0px; }
+  .content_header:before, .content_header:after {
+    content: '';
+    display: table; }
+  .content_header:after {
+    clear: both; }
+  .content_header:last-child {
+    margin-right: 0%; }
+  .content_header img.logo {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+    margin-top: -50px; }
+    .content_header img.logo:before, .content_header img.logo:after {
+      content: '';
+      display: table; }
+    .content_header img.logo:after {
+      clear: both; }
+    .content_header img.logo:last-child {
+      margin-right: 0%; }
+  .content_header ul.nav {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .content_header ul.nav:before, .content_header ul.nav:after {
+      content: '';
+      display: table; }
+    .content_header ul.nav:after {
+      clear: both; }
+    .content_header ul.nav:last-child {
+      margin-right: 0%; }
+  .content_header ul.nav li {
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: inline-block; }
+  .content_header img.tagline {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .content_header img.tagline:before, .content_header img.tagline:after {
+      content: '';
+      display: table; }
+    .content_header img.tagline:after {
+      clear: both; }
+    .content_header img.tagline:last-child {
+      margin-right: 0%; }
 
-.container {
-  background-color: #fff; }
+.main_body__nav {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background-color: pink;
+  margin: 0; }
+  .main_body__nav:before, .main_body__nav:after {
+    content: '';
+    display: table; }
+  .main_body__nav:after {
+    clear: both; }
+  .main_body__nav:last-child {
+    margin-right: 0%; }
+  .main_body__nav ul.nav {
+    list-style-type: none;
+    display: block;
+    text-align: center; }
+  .main_body__nav li {
+    display: inline-block;
+    padding: 20px; }
 
-form .search {
-  background-color: #ECFAD3;
-  color: #88B737; }
-
-.file_path {
-  color: #88B737; }
-
-.sort {
-  color: #88B737; }
-
-.gallery_nav {
-  color: #88B737; }
-
-.gallery_caption {
-  color: #88B737; }
-
-.nav_bar {
-  background-color: #F5CAD2;
-  color: 8D3967; }
-
+.main_body__footer {
+  background-color: teal; }
 
 /*# sourceMappingURL=main.css.map */
