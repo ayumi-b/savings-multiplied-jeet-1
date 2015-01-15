@@ -184,11 +184,11 @@ li {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 74.25%;
+  width: 79.4%;
   margin-left: 0%;
   margin-right: 3%;
   position: relative;
-  left: 12.875%;
+  left: 10.3%;
   *zoom: 1;
   background-color: #fff;
   border-radius: 50px 50px 0px 0px;
@@ -205,31 +205,48 @@ li {
     display: table; }
   .top_white:after {
     clear: both; }
-
-.top_white > img {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 48.5%;
-  margin-left: 0%;
-  margin-right: 3%; }
-  .top_white > img:before, .top_white > img:after {
-    content: '';
-    display: table; }
-  .top_white > img:after {
-    clear: both; }
-  .top_white > img:last-child {
-    margin-right: 0%; }
-
-.top_white ul {
-  margin: 0px; }
-
-.top_white li {
-  list-style: none;
-  display: inline;
-  font-family: "Tahoma";
-  color: #5FAEB4; }
+  .top_white .tw_1 img {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.1108312343%;
+    margin-left: 0%;
+    margin-right: 3.7783375315%; }
+    .top_white .tw_1 img:before, .top_white .tw_1 img:after {
+      content: '';
+      display: table; }
+    .top_white .tw_1 img:after {
+      clear: both; }
+    .top_white .tw_1 img:last-child {
+      margin-right: 0%; }
+  .top_white .tw_2 {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.1108312343%;
+    margin-left: 0%;
+    margin-right: 3.7783375315%; }
+    .top_white .tw_2:before, .top_white .tw_2:after {
+      content: '';
+      display: table; }
+    .top_white .tw_2:after {
+      clear: both; }
+    .top_white .tw_2:last-child {
+      margin-right: 0%; }
+    .top_white .tw_2 ul {
+      margin: 0px;
+      padding: 100px 0px 0px 0px; }
+    .top_white .tw_2 li {
+      list-style: none;
+      display: inline;
+      font-family: "Tahoma";
+      color: #5FAEB4; }
+    .top_white .tw_2 img {
+      max-width: 450px;
+      max-height: auto;
+      padding: 35px 0px 0px 0px; }
 
 .pink_bar {
   *zoom: 1;
@@ -251,7 +268,8 @@ li {
 
 .pink_bar ul {
   padding: 2px, 2px;
-  text-align: center; }
+  text-align: center;
+  margin: 0px; }
 
 .pink_bar li {
   list-style: none;

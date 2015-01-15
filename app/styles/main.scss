@@ -31,28 +31,40 @@ li {
 // White Section at the Top 
 
 .top_white {
-  @include col(3/4);
-  @include shift(1/8);
+  @include col(8/10);
+  @include shift(1/10);
   @include cf();
   background-color: #fff;
   border-radius: 50px 50px 0px 0px;
   color: #D6F1F0;
-}
 
-.top_white>img {
-  @include col(1/2);
-}
+  .tw_1 img {
+    @include col(1/2 4/5);
+  }
 
-.top_white ul {
-  margin: 0px;      //TO WIPE THE AUTO-ADDED UL TOP AND BOTTOM MARGINS OF 16
-}
+  .tw_2 {
+    @include col(1/2 4/5);
+    
+      ul {  
+        margin: 0px;      //TO WIPE THE AUTO-ADDED UL TOP AND BOTTOM MARGINS OF 16
+        padding: 100px 0px 0px 0px;
+      }
 
-.top_white li {
-  
-  list-style: none;
-  display: inline;
-  font-family: "Tahoma";
-  color: #5FAEB4;
+      li {
+        list-style: none;
+        display: inline;
+        font-family: "Tahoma";
+        color: #5FAEB4;
+      }
+
+      img {
+        max-width: 450px;
+        max-height: auto;
+        padding: 35px 0px 0px 0px;
+      }
+
+
+  }
 }
 
    
@@ -67,6 +79,7 @@ li {
 .pink_bar ul {
   padding: 2px, 2px;
   text-align: center;
+  margin: 0px;
 }
 
 .pink_bar li {
