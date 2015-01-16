@@ -2,6 +2,7 @@
 @import "variables";
 @import "headings"; 
 
+<<<<<<< HEAD
 .main_body {
 	@include col(12/12);
 	position: relative;
@@ -79,14 +80,249 @@
 
 
 
+=======
+
+body {
+  @include col(12/12);
+  font-family: Arial;
+  background-color: #77CCD2;
+}
+
+// THIS SECTION MOSTLY ACTS AS THE BACKGROUND FOR THE LIGHT TEAL TOP PART OF THE PAGE 
+
+.top_teal{
+  //@include center();
+  @include col(12/12);
+  background-color: #D6F1F0;
+  margin: -10px 0px;
+}
+
+ ul {
+  @include col(3/4);    // THIS SAYS THAT THE UL WILL TAKE UP THREE QUARTERS OF THE PARENT
+  @include shift(1/8);  //  THIS MOVES THE LIST OVER BY 1 COLUMN
+  text-align: right;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  color: #5FAEB4;
+}
+
+
+// MAIN CONTAINER FOR THE WHITE SECTION AT THE TOP 
+
+.top_white {
+  @include col(8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+  @include cf();
+  background-color: #fff;
+  border-radius: 50px 50px 0px 0px;
+  color: #D6F1F0;
+  padding: 0px;
+
+  // FIRST COLUMN OF TOP WHITE SECTION
+
+  .tw_1 img {
+    @include col(1/2 4/5);
+    margin-top: -35px;      // This makes the owls stick up over the white part.
+  }
+
+  // SECOND COLUMN OF THE TOP WHITE SECTION
+
+  .tw_2 {
+    @include col(1/2 4/5); // FIRST FRACTION IS THIS COLUMN, SECOND FRACTION IS PARENT SECTION
+    margin: 0px; 
+
+      ul {  
+        padding: 40px 0px 0px 0px;
+        width: 100%;
+      }
+
+      li {
+        @include cf();
+        @include col(1/4 1/2 4/5);    // EACH LIST ITEM IS GOING TO OCCUPY ONE -- OF FOUR -- COLUMNS
+        list-style: none;
+        display: inline;
+        font-family: 'Helvetica';
+        font-weight: lighter;
+        font-size: 16px;
+        color: #5FAEB4;
+        text-align: center;
+        border-radius: 50px 50px 50px 50px;
+        padding: 1px 6px 1px 6px;
+        margin: 0px;
+
+        a {
+        
+        }  
+      }
+  }
+
+  li:nth-child(1) {      // THIS SECTION IS STYLING THE FAKE "BUTTONS" IN THE LIST AT THE TOP
+    background-color: #77CCD1;
+    color: #FFF;
+  }
+  li:nth-child(2) {
+    background-color: #8AB93A;
+    color: #FFF;
+  }
+  li:nth-child(3) {
+    background-color: #71288C;
+    color: #FFF;
+  }
+  li:nth-child(4) {
+    background-color: #EB008A;
+    color: #FFF;
+  }
+
+
+// THIS SECTION IS THE BOTTOM HALF OF THE SECOND COLUMN IN THE TOP WHITE SECTION
+
+  .tw_3 {
+    @include col(1/2 4/5);  // AGAIN, THE FIRST FRACTION IS THE AMOUNT OF THE PARENT THAT THIS COLUMN TAKES
+                            // THE SECOND FRACTION TELLS HOW MUCH -- IN TOTAL -- THE PARENT DIV (TOP_WHITE) TAKES UP
+    img {
+        max-width: 100%;
+        //max-height: auto;
+        padding: 40px 0px 0px 8px;
+      }
+  }
+}
+
+   
+// THIS IS THE PINK NAV BAR THAT DIVIDES THE TOP FROM THE BOTTOM 
+
+.pink_bar {
+  @include col(12/12);
+  @include center();
+  background-color: #F5CAD2;
+  font-family: 'Corben', Georgia, Times, serif;
+  font-size: 12px;
+  font-style: thick;
+
+  ul {
+    @include cf();  
+    text-align: center;
+    padding: 3px 0px 0px 0px;
+    margin: 2px;
+ 
+  li {            
+    @include col(2.25/12 12/12);
+    list-style: none;
+    display: inline;
+    color: #6E0F47;
+    margin: 0px;
+    padding: 9px 0px 0px 0px;
+    // border-radius: 50px 50px 50px 50px;
+
+      
+  input {                      
+    @include col(2/12 12/12);
+    padding: 0px;
+    border-radius: 15px;
+    margin: 0px 0px 0px 20px;
+    width: 100%;
+  } 
+  }
+  }
+}  
 
 
 
+  //THIS IS BOTTOM MIDDLE WHITE SECTION
 
+.bottom_white {
+  @include col(8/10);   //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+  background-color: #fff;
+  border-radius: 0px 0px 50px 50px;
+  padding: 0px 0px 0px 0px;
 
+  .bt_1 {
+    @include col (1/2 8/10);
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
 
+    .pic1 {
+      margin: 0px;
+      float: left;      // This should really be done with a column
+      padding:  10px, 0px, 0px, 0px;
+    }
 
+    .pic2 {
+      margin: 0px;
+      padding: 15px 3px 0px 0px;
+      width: 100%;
+    }
 
+    .pic3 {
+      float: right;     // Also really ought to be done as part of a three column with a 2 col shift
+      padding: 100px 0px 75px 20px;
+      margin: 0px;
+    }
+  } 
+
+  .bt_2 {
+    @include cf();
+    //@include col (1/2 8/10);
+    //@include shift(1/2);
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+  } 
+
+  .bt_3 {
+    @include col(10/10 8/10);
+    background-image: url("https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/dotted_line_44x9.png");
+    background-repeat: repeat-x;
+    padding: 20px 0px 40px 0px;
+
+    .pic4 {
+      @include center();
+      @include col(1/4 10/10 8/10);
+      padding: 0px;
+      margin: 0px 13px;
+    }
+  }  
+} 
+
+// THIS IS THE BOTTOM (DARKER TEAL) BACKGROUND CONTAINER
+
+.bottom_teal {
+  @include col(12/12);
+  @include center();
+  background-color: #77CCD2;
+  padding: 40px 0px;
+  font-size: 12px;
+  
+  ul {
+    @include cf();  
+    text-align: center;
+    padding: 0px;
+
+  li:nth-child(odd) {
+    @include col(0.95/10 12/12);
+    span: (1/5);
+    @include shift(1.25/10);
+    color: #D6F1F0;
+  }
+
+  li:nth-child(even) {
+    @include col(0.25/10 12/12);
+    @include shift(1.25/10); 
+    color: #D6F1F0;
+  }
+
+ 
+  li {            
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+  }
+  }
+}
+>>>>>>> kmrbranch
 
 
 
