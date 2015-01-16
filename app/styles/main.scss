@@ -4,6 +4,7 @@
 
 
 body {
+  @include col(12/12);
   font-family: Arial;
   background-color: #77CCD2;
 }
@@ -11,9 +12,10 @@ body {
 // THIS SECTION MOSTLY ACTS AS THE BACKGROUND FOR THE LIGHT TEAL TOP PART OF THE PAGE 
 
 .top_teal{
-  @include center();
+  //@include center();
+  @include col(12/12);
   background-color: #D6F1F0;
-  //margin: -8px;
+  margin: -10px 0px;
 }
 
  ul {
@@ -103,8 +105,8 @@ li {
                             // THE SECOND FRACTION TELLS HOW MUCH -- IN TOTAL -- THE PARENT DIV (TOP_WHITE) TAKES UP
     img {
         max-width: 100%;
-        max-height: auto;
-        padding: 10px 0px 0px 8px;
+        //max-height: auto;
+        padding: 40px 0px 0px 8px;
       }
   }
 }
@@ -119,24 +121,24 @@ li {
   font-family: 'Corben', Georgia, Times, serif;
   font-size: 12px;
   font-style: thick;
-  padding: 0px;
-  //margin: 0px -8px;  // <-- probably not the right way to do this
 
   ul {
     @include cf();  
     text-align: center;
-    padding: 0px;
+    padding: 3px 0px 0px 0px;
+    margin: 2px;
  
   li {            
     @include col(2.25/12 12/12);
     list-style: none;
-    display: inline-block;
+    display: inline;
     color: #6E0F47;
     margin: 0px;
-    border-radius: 50px 50px 50px 50px;
+    padding: 9px 0px 0px 0px;
+    // border-radius: 50px 50px 50px 50px;
 
       
-  input {                       // THIS SECTION IS NOT CODED THE WAY I'D LIKE...
+  input {                      
     @include col(2/12 12/12);
     padding: 0px;
     border-radius: 15px;
@@ -165,7 +167,7 @@ li {
 
     .pic1 {
       margin: 0px;
-      float: left;
+      float: left;      // This should really be done with a column
       padding:  10px, 0px, 0px, 0px;
     }
 
@@ -176,7 +178,7 @@ li {
     }
 
     .pic3 {
-      float: right;
+      float: right;     // Also really ought to be done as part of a three column with a 2 col shift
       padding: 100px 0px 75px 20px;
       margin: 0px;
     }
@@ -195,6 +197,15 @@ li {
     background-image: url("https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/dotted_line_44x9.png");
     background-repeat: repeat-x;
     padding: 20px 0px 40px 0px;
+
+    .pic4 {
+      @include center();
+      @include col(1/4 10/10 8/10);
+      padding: 0px;
+      margin: 0px 13px;
+    }
+
+
   }  
 } 
 
