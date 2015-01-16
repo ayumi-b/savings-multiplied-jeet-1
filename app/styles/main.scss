@@ -4,14 +4,16 @@
 
 
 body {
-
+  font-family: Arial;
+  background-color: #77CCD2;
 }
 
-// THIS IS THE TOP SECTION THAT MOSTLY ACTS AS THE BACKGROUND FOR THE TOP SECTION OF THE PAGE 
+// THIS SECTION MOSTLY ACTS AS THE BACKGROUND FOR THE LIGHT TEAL TOP PART OF THE PAGE 
 
 .top_teal{
   @include center();
   background-color: #D6F1F0;
+  //margin: -8px;
 }
 
  ul {
@@ -27,44 +29,47 @@ li {
 }
 
 
-// OVERALL CONTAINER FOR THE WHITE SECTION AT THE TOP 
+// MAIN CONTAINER FOR THE WHITE SECTION AT THE TOP 
 
 .top_white {
-  @include col(8/10);     //  THIS SETS THE SECTION TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include col(8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
   @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
   @include cf();
   background-color: #fff;
   border-radius: 50px 50px 0px 0px;
   color: #D6F1F0;
+  padding: 0px;
 
   // FIRST COLUMN OF TOP WHITE SECTION
 
   .tw_1 img {
     @include col(1/2 4/5);
-    margin-top: -45px;
+    margin-top: -35px;      // This makes the owls stick up over the white part.
   }
 
   // SECOND COLUMN OF THE TOP WHITE SECTION
 
   .tw_2 {
-    @include col(1/2 4/5);   // FIRST FRACTION IS THIS COLUMN, SECOND FRACTION IS PARENT SECTION
-    
+    @include col(1/2 4/5); // FIRST FRACTION IS THIS COLUMN, SECOND FRACTION IS PARENT SECTION
+    margin: 0px; 
+
       ul {  
-        @include cf();        // THIS PUTS IN A CLEARFIX TO SHAEK OUT THE TABLES -- NOT SURE WE ACTUALLY NEED IT
         padding: 40px 0px 0px 0px;
+        width: 100%;
       }
 
       li {
-        @include col(1/4);    // EACH LIST ITEM IS GOING TO OCCUPY ONE -- OF FOUR -- COLUMNS
+        @include cf();
+        @include col(1/4 1/2 4/5);    // EACH LIST ITEM IS GOING TO OCCUPY ONE -- OF FOUR -- COLUMNS
         list-style: none;
-        display: inline-block;
-        font-family: Arial;
+        display: inline;
+        font-family: 'Helvetica';
         font-weight: lighter;
-        font-size: 18px;
+        font-size: 16px;
         color: #5FAEB4;
         text-align: center;
         border-radius: 50px 50px 50px 50px;
-        padding: 3px 3px 2px 3px;
+        padding: 1px 6px 1px 6px;
         margin: 0px;
 
         a {
@@ -73,7 +78,7 @@ li {
       }
   }
 
-  li:nth-child(1) {                 // THIS SECTION IS STYLING THE FAKE "BUTTONS" IN THE LIST AT THE TOP
+  li:nth-child(1) {      // THIS SECTION IS STYLING THE FAKE "BUTTONS" IN THE LIST AT THE TOP
     background-color: #77CCD1;
     color: #FFF;
   }
@@ -97,7 +102,7 @@ li {
     @include col(1/2 4/5);  // AGAIN, THE FIRST FRACTION IS THE AMOUNT OF THE PARENT THAT THIS COLUMN TAKES
                             // THE SECOND FRACTION TELLS HOW MUCH -- IN TOTAL -- THE PARENT DIV (TOP_WHITE) TAKES UP
     img {
-        max-width: 450px;
+        max-width: 100%;
         max-height: auto;
         padding: 10px 0px 0px 8px;
       }
@@ -108,32 +113,125 @@ li {
 // THIS IS THE PINK NAV BAR THAT DIVIDES THE TOP FROM THE BOTTOM 
 
 .pink_bar {
-  @include col(8/8);
+  @include col(12/12);
+  @include center();
   background-color: #F5CAD2;
-  margin: 0px;
-}
-
-.pink_bar ul {
-  padding: 2px, 2px;
-  text-align: center;
-  margin: 0px;
-}
-
-.pink_bar li {            // NEED TO RESTYLE THIS SECTION USING THE JEET COLUMN STRUCTURE.
-  list-style: none;
-  display: inline;
-  padding: 2px, 10px, 2px 10px;
-  margin: 0px 25px;
   font-family: 'Corben', Georgia, Times, serif;
   font-size: 12px;
-  color: #6E0F47;
+  margin: 0px -8px;  // <-- probably not the right way to do this
+
+  ul {
+    @include cf();  
+    text-align: center;
+ 
+  li {            
+    @include col(2.25/12 12/12);
+    list-style: none;
+    display: inline-block;
+    color: #6E0F47;
+    margin: 0px;
+    border-radius: 50px 50px 50px 50px;
+
+      
+  input {                       // THIS SECTION IS NOT CODED THE WAY I'D LIKE...
+    @include col(2/12 12/12);
+    padding: 0px 0px 0px 0px;
+    border-radius: 15px;
+    margin: 0px;
+    width: 100%;
+  } 
+  }
+  }
+}  
+
+
+
+  //THIS IS BOTTOM MIDDLE WHITE SECTION
+
+.bottom_white {
+  @include col(8/10);   //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+  background-color: #fff;
+  border-radius: 0px 0px 50px 50px;
+  padding: 0px 0px 0px 0px;
+
+  .bt_1 {
+    @include col (1/2 8/10);
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+
+    .pic1 {
+      margin: 0px;
+      float: left;
+      padding:  10px, 0px, 0px, 0px;
+    }
+
+    .pic2 {
+      margin: 0px;
+      padding: 15px 3px 0px 0px;
+      width: 100%;
+    }
+
+    .pic3 {
+      float: right;
+      padding: 100px 20px;
+      margin: 0px;
+    }
+  } 
+
+  .bt_2 {
+    @include cf();
+    //@include col (1/2 8/10);
+    //@include shift(1/2);
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+  } 
+
+  .bt_3 {
+    @include col(10/10 8/10);
+    background-image: url("https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/dotted_line_44x9.png");
+    background-repeat: repeat-x;
+    padding: 20px 0px 40px 0px;
+  }  
+} 
+
+// THIS IS THE BOTTOM (DARKER TEAL) BACKGROUND CONTAINER
+
+.bottom_teal {
+  @include col(12/12);
+  @include center();
+  background-color: #77CCD2;
+  padding: 40px 0px;
+  font-size: 12px;
+  
+  ul {
+    @include cf();  
+    text-align: center;
+    padding: 0px;
+
+  li:nth-child(odd) {
+    @include col(0.95/10 12/12);
+    span: (1/5);
+    @include shift(1.25/10);
+    color: #D6F1F0;
+  }
+
+  li:nth-child(even) {
+    @include col(0.25/10 12/12);
+    @include shift(1.25/10); 
+    color: #D6F1F0;
+  }
+
+ 
+  li {            
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+  }
+  }
 }
 
-// NEED THE BOTTOM BACKGROUND CONTAINER
-  // NEED LINKS COLUMNS (6 OF THEM)
 
-// NEED THE BOTTOM WHITE CONTAINER WITH REALLY TWO COLUMNS
-  // NEED TO ADD TWO MAIN COLUMNS
-  // NEED TO ADD THE FOUR COLUMNS FOR THE BOTTOM SECTION
 
 
