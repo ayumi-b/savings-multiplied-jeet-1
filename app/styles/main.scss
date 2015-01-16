@@ -118,11 +118,14 @@ li {
   background-color: #F5CAD2;
   font-family: 'Corben', Georgia, Times, serif;
   font-size: 12px;
-  margin: 0px -8px;  // <-- probably not the right way to do this
+  font-style: thick;
+  padding: 0px;
+  //margin: 0px -8px;  // <-- probably not the right way to do this
 
   ul {
     @include cf();  
     text-align: center;
+    padding: 0px;
  
   li {            
     @include col(2.25/12 12/12);
@@ -135,9 +138,9 @@ li {
       
   input {                       // THIS SECTION IS NOT CODED THE WAY I'D LIKE...
     @include col(2/12 12/12);
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
     border-radius: 15px;
-    margin: 0px;
+    margin: 0px 0px 0px 20px;
     width: 100%;
   } 
   }
@@ -174,7 +177,7 @@ li {
 
     .pic3 {
       float: right;
-      padding: 100px 20px;
+      padding: 100px 0px 75px 20px;
       margin: 0px;
     }
   } 

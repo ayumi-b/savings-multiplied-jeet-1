@@ -337,7 +337,8 @@ li {
   background-color: #F5CAD2;
   font-family: 'Corben', Georgia, Times, serif;
   font-size: 12px;
-  margin: 0px -8px; }
+  font-style: thick;
+  padding: 0px; }
   .pink_bar:before, .pink_bar:after {
     content: '';
     display: table; }
@@ -352,7 +353,8 @@ li {
     clear: both; }
   .pink_bar ul {
     *zoom: 1;
-    text-align: center; }
+    text-align: center;
+    padding: 0px; }
     .pink_bar ul:before, .pink_bar ul:after {
       content: '';
       display: table; }
@@ -386,9 +388,9 @@ li {
         width: 14.1666666667%;
         margin-left: 0%;
         margin-right: 3%;
-        padding: 0px 0px 0px 0px;
+        padding: 0px;
         border-radius: 15px;
-        margin: 0px;
+        margin: 0px 0px 0px 20px;
         width: 100%; }
         .pink_bar ul li input:before, .pink_bar ul li input:after {
           content: '';
@@ -445,7 +447,7 @@ li {
       width: 100%; }
     .bottom_white .bt_1 .pic3 {
       float: right;
-      padding: 100px 20px;
+      padding: 100px 0px 75px 20px;
       margin: 0px; }
   .bottom_white .bt_2 {
     *zoom: 1;
