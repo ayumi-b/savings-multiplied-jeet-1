@@ -1,6 +1,7 @@
 @import "../../bower_components/jeet/scss/jeet/index";
 @import "variables";
 @import "headings"; 
+@import "store.scss";
 
 
 body {
@@ -161,7 +162,7 @@ li {
   padding: 0px 0px 0px 0px;
 
   .bt_1 {
-    @include col (1/2 8/10);
+    @include col (1/2 8/10); 
     padding: 15px 0px 0px 0px;
     margin: 0px;
 

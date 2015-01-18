@@ -147,6 +147,53 @@ h3 {
   color: #77CCD2;
   padding: 10px 0px 0px 0px; }
 
+.fm_1 {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 30.8144416457%;
+  margin-left: 0%;
+  margin-right: 3.7783375315%;
+  background-color: white;
+  margin: 0; }
+  .fm_1:before, .fm_1:after {
+    content: '';
+    display: table; }
+  .fm_1:after {
+    clear: both; }
+  .fm_1:last-child {
+    margin-right: 0%; }
+
+.crumb_nav {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.4072208228%;
+  margin-left: 0%;
+  margin-right: 3.7783375315%;
+  background-color: green;
+  margin: 0; }
+  .crumb_nav:before, .crumb_nav:after {
+    content: '';
+    display: table; }
+  .crumb_nav:after {
+    clear: both; }
+  .crumb_nav:last-child {
+    margin-right: 0%; }
+
+form {
+  background-color: #EAFAC6;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 25px; }
+  form label {
+    display: block;
+    color: #7DAE27; }
+  form input {
+    color: #7DAE27; }
+
 body {
   *zoom: 1;
   float: left;
