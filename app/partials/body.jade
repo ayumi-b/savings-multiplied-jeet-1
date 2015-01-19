@@ -3,6 +3,7 @@
 .bottom_white
 
   .fm_1
+    //Form Area
     div#contact-area
     form(method='post',action='')
       label Limit your search by:
@@ -14,21 +15,17 @@
       <br>
       <input type="radio" name="condition" value="used">Gently Used
       label(for='condition') Size:
-      <input type="radio" name="size" value="4" >4
+      <input type="radio" name="size" value="4"> 4
+      <input type="radio" name="size" value="8"> 8
       <br>
-      <input type="radio" name="size" value="5" >5
+      <input type="radio" name="size" value="5"> 5
+      <input type="radio" name="size" value="9"> 9
       <br>
-      <input type="radio" name="size" value="6" >6
+      <input type="radio" name="size" value="6"> 6
+      <input type="radio" name="size" value="10"> 10
       <br>
-      <input type="radio" name="size" value="7" >7
-      <br>
-      <input type="radio" name="size" value="8" >8
-      <br>
-      <input type="radio" name="size" value="9" >9
-      <br>
-      <input type="radio" name="size" value="10" >10
-      <br>
-      <input type="radio" name="size" value="11" >11
+      <input type="radio" name="size" value="7"> 7
+      <input type="radio" name="size" value="11"> 11
       <br>
       label(for='condition') Season:
       <input type="radio" name="season" value="all" >All Seasons
@@ -63,6 +60,27 @@
     
   .crumb_nav
     p All > Twin > B/G
+    form.sort_by
+      label(for='Sort') Sort by:
+      select
+        <option value="price">Price
+    //    
+    .nav_results
+      a(href='google.com') prev
+      a(href='#') |
+      a(href='google.com') page num.
+      a(href='#') |
+      a(href='google.com') next
+      a(href='#') |
+      a(href='google.com') view all
+
+    .results_grid1
+      p 
+
+
+
+       
+
 
  
 

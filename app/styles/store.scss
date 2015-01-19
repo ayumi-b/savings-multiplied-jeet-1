@@ -6,20 +6,61 @@
 
 .crumb_nav {
 	@include col(2/3 8/10);
-	background-color: green;
+	background-color: white;
 	margin: 0;
+	p {
+		color: #7dae27;
+	}
+	.sort_by {
+		background-color: white;
+		float: left;
+	}
 }
 
+
+//This is the styling for the search form on the left column
 form {
 	label {
 		display: block;	
 		color: #7DAE27;
 	}
-	input {
+	p {
 		color: #7DAE27;
 	}
 	background-color: #EAFAC6;
 	margin: 10px;
 	padding: 15px;
 	border-radius: 25px;
+}
+
+//This styles the navigation resultson the right corner
+.nav_results {
+		display: inline;
+		float: right;
+		a:link {
+			color: #7dae27;
+			text-decoration: none;
+			padding: 5px;
+		}
+}
+
+//Styles the sort options above search results
+.sort_by {
+	display: inline;
+	float: left;
+	select {
+		float: left;
+		display: inline;
+	}
+	margin: 0;
+	padding: 0;
+}
+
+
+}
+//Styles the results grid 
+	
+.results_grid1 {
+	@include col(1/4 1/1);
+	margin: 0;
 }
