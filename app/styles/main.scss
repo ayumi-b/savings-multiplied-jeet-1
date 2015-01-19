@@ -204,14 +204,14 @@ li {
     @include span(10/10);
     background-image: url("https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/dotted_line_44x9.png");
     background-repeat: repeat-x;
-    padding: 20px 0px 40px 0px;
+    padding: 20px 0px 20px 0px;
   }
   .pic4 {
-      @include center(8/10);
-      @include col(1/4 10/10 8/10);
-      padding: 0px;
-      //margin: 0px 1%;
-  }
+    @include span(1/4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }   
 } 
 
 // THIS IS THE BOTTOM (DARKER TEAL) BACKGROUND CONTAINER

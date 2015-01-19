@@ -579,7 +579,7 @@ li {
     margin-right: 0%;
     background-image: url("https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/dotted_line_44x9.png");
     background-repeat: repeat-x;
-    padding: 20px 0px 40px 0px; }
+    padding: 20px 0px 20px 0px; }
     .bottom_white .bt_3:before, .bottom_white .bt_3:after {
       content: '';
       display: table; }
@@ -587,34 +587,20 @@ li {
       clear: both; }
   .bottom_white .pic4 {
     *zoom: 1;
-    width: auto;
-    max-width: 0.8;
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    *zoom: 1;
     float: left;
     clear: none;
     text-align: inherit;
-    width: 22.1662468514%;
+    width: 25%;
     margin-left: 0%;
-    margin-right: 3.7783375315%;
-    padding: 0px; }
+    margin-right: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
     .bottom_white .pic4:before, .bottom_white .pic4:after {
       content: '';
       display: table; }
     .bottom_white .pic4:after {
       clear: both; }
-    .bottom_white .pic4:before, .bottom_white .pic4:after {
-      content: '';
-      display: table; }
-    .bottom_white .pic4:after {
-      clear: both; }
-    .bottom_white .pic4:last-child {
-      margin-right: 0%; }
 
 .bottom_teal {
   *zoom: 1;
