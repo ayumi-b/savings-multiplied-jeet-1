@@ -200,6 +200,14 @@ li {
     padding: 20px 0px 0px 0px;
   } 
 
+  .bt_2 img {
+    @include center();
+    display: block;
+    width: auto;
+    padding: 0.75% 0px 0.75% 0px;
+    // max-width: 400px;
+  }
+
   .bt_3 {
     @include span(10/10);
     background-image: url("https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/dotted_line_44x9.png");

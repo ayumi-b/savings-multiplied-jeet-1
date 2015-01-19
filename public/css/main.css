@@ -569,6 +569,24 @@ li {
       display: table; }
     .bottom_white .bt_2:after {
       clear: both; }
+  .bottom_white .bt_2 img {
+    *zoom: 1;
+    width: auto;
+    max-width: 1410px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    width: auto;
+    padding: 0.75% 0px 0.75% 0px; }
+    .bottom_white .bt_2 img:before, .bottom_white .bt_2 img:after {
+      content: '';
+      display: table; }
+    .bottom_white .bt_2 img:after {
+      clear: both; }
   .bottom_white .bt_3 {
     *zoom: 1;
     float: left;
