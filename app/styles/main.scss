@@ -5,7 +5,7 @@
 
 
 body {
-  @include col(12/12);
+  @include center(12/12);
   font-family: Arial;
   background-color: #77CCD2;
 }
@@ -35,7 +35,7 @@ li {
 // MAIN CONTAINER FOR THE WHITE SECTION AT THE TOP 
 
 .top_white {
-  @include col(8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include span(8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
   @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
   @include cf();
   background-color: #fff;
@@ -46,19 +46,28 @@ li {
   // FIRST COLUMN OF TOP WHITE SECTION
 
   .tw_1 img {
-    @include col(1/2 4/5);
-    margin-top: -35px;      // This makes the owls stick up over the white part.
+    @include span(1/2);
+    @include breakpoint(tablet) {
+      @include stack();
+    margin-top: -12%;
+    margin-bottom: 1%;
+    }
+    margin-top: -6%;
+    margin-bottom: 1%;      // This makes the owls stick up over the white part.
   }
 
   // SECOND COLUMN OF THE TOP WHITE SECTION
 
   .tw_2 {
-    @include col(1/2 4/5); // FIRST FRACTION IS THIS COLUMN, SECOND FRACTION IS PARENT SECTION
-    margin: 0px; 
-
+    @include span(1/2); // FIRST FRACTION IS THIS COLUMN, SECOND FRACTION IS PARENT SECTION
+    //margin: 0px;
+    @include breakpoint(tablet) {
+      @include stack();
+    }
       ul {  
-        padding: 40px 0px 0px 0px;
+        padding: 0%;
         width: 100%;
+
       }
 
       li {
@@ -71,12 +80,12 @@ li {
         font-size: 16px;
         color: #5FAEB4;
         text-align: center;
-        border-radius: 50px 50px 50px 50px;
-        padding: 1px 6px 1px 6px;
-        margin: 0px;
+        border-radius: 50px;
+        padding: 1% 1% 0.4% 1%;
+        margin: 0 0.15%;
 
         a {
-        
+          
         }  
       }
   }
@@ -103,21 +112,19 @@ li {
 
   .tw_3 {
     @include col(1/2 4/5);  // AGAIN, THE FIRST FRACTION IS THE AMOUNT OF THE PARENT THAT THIS COLUMN TAKES
-                            // THE SECOND FRACTION TELLS HOW MUCH -- IN TOTAL -- THE PARENT DIV (TOP_WHITE) TAKES UP
-    img {
-        max-width: 100%;
-        //max-height: auto;
-        padding: 40px 0px 0px 8px;
-      }
+    @include breakpoint(tablet) {
+      @include stack();
+    }                  // THE SECOND FRACTION TELLS HOW MUCH -- IN TOTAL -- THE PARENT DIV (TOP_WHITE) TAKES UP
   }
 }
+
+
 
    
 // THIS IS THE PINK NAV BAR THAT DIVIDES THE TOP FROM THE BOTTOM 
 
 .pink_bar {
-  @include col(12/12);
-  @include center();
+  @include center(12/12);
   background-color: #F5CAD2;
   font-family: 'Corben', Georgia, Times, serif;
   font-size: 12px;
@@ -155,14 +162,14 @@ li {
   //THIS IS BOTTOM MIDDLE WHITE SECTION
 
 .bottom_white {
-  @include col(8/10);   //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include span(8/10);   //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
   @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
   background-color: #fff;
   border-radius: 0px 0px 50px 50px;
   padding: 0px 0px 0px 0px;
 
   .bt_1 {
-    @include col (1/2 8/10); 
+    @include span (1/2); 
     padding: 15px 0px 0px 0px;
     margin: 0px;
 
@@ -193,19 +200,26 @@ li {
     padding: 20px 0px 0px 0px;
   } 
 
+  .bt_2 img {
+    @include center();
+    display: block;
+    width: auto;
+    padding: 0.75% 0px 0.75% 0px;
+    // max-width: 400px;
+  }
+
   .bt_3 {
-    @include col(10/10 8/10);
+    @include span(10/10);
     background-image: url("https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/dotted_line_44x9.png");
     background-repeat: repeat-x;
-    padding: 20px 0px 40px 0px;
-
-    .pic4 {
-      @include center();
-      @include col(1/4 10/10 8/10);
-      padding: 0px;
-      margin: 0px 13px;
-    }
-  }  
+    padding: 20px 0px 20px 0px;
+  }
+  .pic4 {
+    @include span(1/4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }   
 } 
 
 // THIS IS THE BOTTOM (DARKER TEAL) BACKGROUND CONTAINER
