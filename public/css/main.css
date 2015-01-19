@@ -218,24 +218,26 @@ form {
   .sort_by select {
     display: inline; }
 
-.results_grid1 table {
+.results_grid1 > table {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 22.75%;
+  width: 66.6666666667%;
   margin-left: 0%;
-  margin-right: 3%;
+  margin-right: 0%;
   margin-top: 50px; }
-  .results_grid1 table:before, .results_grid1 table:after {
+  .results_grid1 > table:before, .results_grid1 > table:after {
     content: '';
     display: table; }
-  .results_grid1 table:after {
+  .results_grid1 > table:after {
     clear: both; }
-  .results_grid1 table:last-child {
-    margin-right: 0%; }
-  .results_grid1 table td {
-    padding: 25px; }
+  .results_grid1 > table td {
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+    margin: 25px;
+    background-color: #EAFAC6; }
 
 body {
   *zoom: 1;
