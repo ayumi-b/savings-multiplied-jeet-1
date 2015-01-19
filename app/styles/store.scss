@@ -62,13 +62,20 @@ form {
 
 //Styles the results grid 
 	
-.results_grid1 table {
-	@include col(1/4 1/1);
+.results_grid1 > table{
+	@include span(2/3);
+	// @include center();
 	margin-top: 50px;
 	td {
-		padding: 25px;
+		display: inline-block;
+		text-align: center;
+		padding: 50px;
+		margin: 25px;
+		background-color: #EAFAC6;
+		
 	}
-
 }
+
+
 
 
