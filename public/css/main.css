@@ -156,7 +156,9 @@ h3 {
   margin-left: 0%;
   margin-right: 3.7783375315%;
   background-color: white;
-  margin: 0; }
+  margin: 0;
+  color: #7dae27;
+  margin-bottom: 40px; }
   .fm_1:before, .fm_1:after {
     content: '';
     display: table; }
@@ -198,6 +200,8 @@ form {
     color: #7DAE27; }
   form p {
     color: #7DAE27; }
+  form input [type="radio"] {
+    color: #7dae27; }
 
 .nav_results {
   display: inline;
@@ -208,80 +212,30 @@ form {
     padding: 5px; }
 
 .sort_by {
-  display: inline;
-  float: left;
+  display: inline-block;
   margin: 0;
   padding: 0; }
   .sort_by select {
-    float: left;
     display: inline; }
 
-.deez {
-  float: clear; }
-
-.results_grid1 {
+.results_grid1 table {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 22.1662468514%;
+  width: 22.75%;
   margin-left: 0%;
-  margin-right: 3.7783375315%; }
-  .results_grid1:before, .results_grid1:after {
+  margin-right: 3%;
+  margin-top: 50px; }
+  .results_grid1 table:before, .results_grid1 table:after {
     content: '';
     display: table; }
-  .results_grid1:after {
+  .results_grid1 table:after {
     clear: both; }
-  .results_grid1:last-child {
+  .results_grid1 table:last-child {
     margin-right: 0%; }
-
-.results_grid2 {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 22.1662468514%;
-  margin-left: 0%;
-  margin-right: 3.7783375315%; }
-  .results_grid2:before, .results_grid2:after {
-    content: '';
-    display: table; }
-  .results_grid2:after {
-    clear: both; }
-  .results_grid2:last-child {
-    margin-right: 0%; }
-
-.results_grid3 {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 22.1662468514%;
-  margin-left: 0%;
-  margin-right: 3.7783375315%; }
-  .results_grid3:before, .results_grid3:after {
-    content: '';
-    display: table; }
-  .results_grid3:after {
-    clear: both; }
-  .results_grid3:last-child {
-    margin-right: 0%; }
-
-.results_grid4 {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 22.1662468514%;
-  margin-left: 0%;
-  margin-right: 3.7783375315%; }
-  .results_grid4:before, .results_grid4:after {
-    content: '';
-    display: table; }
-  .results_grid4:after {
-    clear: both; }
-  .results_grid4:last-child {
-    margin-right: 0%; }
+  .results_grid1 table td {
+    padding: 25px; }
 
 body {
   *zoom: 1;
