@@ -7,34 +7,34 @@ head
   link(rel="stylesheet", href="css/main.css")
   link(href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css")
 
-body
+  body
+    include ./partials/_headerAll
 
-  include partials/_header.jade
+    include ./partials/_pinkNav
 
-  include partials/_pinkNav.jade
+    .bottom_white
 
-  .bottom_white
+    include ./partials/_sidebarP2
 
-  include partials/_sidebarP2.jade
+    .crumb_nav
+      p All  Twin  B/G
 
- .crumb_nav
-   p All > Twin > B/G
-   p.sort_by
-     label(for='sort') Sort by:
-     select(id='sort')
-       option Price
+    .sort_by
+      label(for='sort') Sort by:
+        select(id='sort')
+        option Price
 
-  .nav_results
-     a(href='google.com') prev
-     a(href='#') |
-     a(href='google.com') page num.
-     a(href='#') |
-     a(href='google.com') next
-     a(href='#') |
-     a(href='google.com') view all
+    .nav_results
+      a(href='google.com') prev
+      a(href='#') |
+      a(href='google.com') page num.
+      a(href='#') |
+      a(href='google.com') next
+      a(href='#') |
+      a(href='google.com') view all
 
 
-  include partials/_footerAll.jade
+    include ./partials/_footerAll
 
 
 

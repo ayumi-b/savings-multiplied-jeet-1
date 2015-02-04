@@ -9,21 +9,51 @@
 //
 // THE STYLING PORTION THAT FOLLOWS IS UNIQUE TO THIS PAGE
 
+// THIS STYLES THE GREEN SEARCH SECTION ON THE LEFT-HAND SIDE
+// IT'S CURRENTLY TAKING UP ABOUT 1/3 OF THE PARENT DIV
+
+.form {
+  @include col(2/8 8/10);
+  label {
+    display: block;
+    color: $medium-green;
+  }
+
+  p {
+  color: $medium-green;
+  }
+
+  background-color: $light-green;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 25px;
+
+  input [type="radio"] {
+    color: $medium-green;
+  }
+}
+
+
+// THIS SECTION IS THE 'ALL > TWIN > B/G' SECTION ON THE TOP RIGHT
+
+
 .fm_1 {
   @include col(6/8 8/10);
   background-color: white;
   margin: 0;
-  color: #7dae27;
+  color: $medium-green;
   margin-bottom: 40px;
 }
 
+
+
 .crumb_nav {
   @include col(2/3 8/10);
-  background-color: white;
+  background-color: tomato;
   margin: 0;
 
   p {
-    color: #7dae27;
+    color: $medium-green;
   }
 
   .sort_by {
@@ -33,39 +63,13 @@
 }
 
 
-// THIS STYLES THE GREEN SEARCH SECTION ON THE LEFT-HAND SIDE
-// IT'S CURRENTLY TAKING UP ABOUT 1/3 OF THE PARENT DIV
-
-.form {
-  @include col(2/8 8/10);
-  label {
-    display: block;
-    color: #7DAE27;
-  }
-
-  p {
-  color: #7DAE27;
-  }
-
-  background-color: #EAFAC6;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 25px;
-
-  input [type="radio"] {
-    color: #7dae27;
-  }
-}
-
-// THIS SECTION IS THE 'ALL > TWIN > B/G' SECTION ON THE TOP RIGHT
-
 
 .nav_results {
   @include col(2/8 8/10);
   display: inline;
   float: right;
   a:link {
-    color: #7dae27;
+    color: $medium-green;
     text-decoration: none;
     padding: 5px;
   }
@@ -99,7 +103,7 @@
 .bottom_teal {
   @include col(12/12);
   @include center();
-  background-color: #77CCD2;
+  background-color: $dark-teal;
   padding: 40px 0px;
   font-size: 12px;
 
@@ -113,13 +117,13 @@
     @include col(0.95/10 12/12);
     span: (1/5);
     @include shift(1.25/10);
-    color: #D6F1F0;
+    color: $light-teal;
   }
 
   li:nth-child(even) {
     @include col(0.25/10 12/12);
     @include shift(1.25/10);
-    color: #D6F1F0;
+    color: $light-teal;
   }
 
 

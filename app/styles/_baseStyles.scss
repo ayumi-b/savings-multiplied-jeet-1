@@ -7,14 +7,14 @@
 body {
   @include center(12/12);
   font-family: Arial;
-  background-color: #77CCD2;
+  background-color: $dark-teal;
 }
 
 // THIS SECTION MOSTLY ACTS AS THE BACKGROUND FOR THE LIGHT TEAL TOP PART OF THE PAGE
 
 .top_teal {
   @include col(12/12);
-  background-color: #D6F1F0;
+  background-color: $light-teal;
   margin: -10px 0px;
 }
 
@@ -27,24 +27,24 @@ ul {
 li {
   list-style: none;
   display: inline;
-  color: #5FAEB4;
+  color: $dark-teal;
 }
 
 
 // MAIN CONTAINER FOR THE WHITE SECTION AT THE TOP
 
-.top_white {
+.logo_area {
   @include span(8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
   @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
   @include cf();
   background-color: #fff;
   border-radius: 50px 50px 0px 0px;
-  color: #D6F1F0;
+  color: $light-teal;
   padding: 0px;
 
   // FIRST COLUMN OF TOP WHITE SECTION
 
-  .tw_1 img {
+  .logo_area_logo_w_owls_image img {
     @include span(1/2);
     @include breakpoint(tablet) {
       @include stack();
