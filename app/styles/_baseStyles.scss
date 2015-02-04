@@ -1,0 +1,163 @@
+
+
+
+
+
+
+body {
+  @include center(12/12);
+  font-family: Arial;
+  background-color: #77CCD2;
+}
+
+// THIS SECTION MOSTLY ACTS AS THE BACKGROUND FOR THE LIGHT TEAL TOP PART OF THE PAGE
+
+.top_teal {
+  @include col(12/12);
+  background-color: #D6F1F0;
+  margin: -10px 0px;
+}
+
+ul {
+  @include col(3/4);    // THIS SAYS THAT THE UL WILL TAKE UP THREE QUARTERS OF THE PARENT
+  @include shift(1/8);  //  THIS MOVES THE LIST OVER BY 1 COLUMN
+  text-align: right;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  color: #5FAEB4;
+}
+
+
+// MAIN CONTAINER FOR THE WHITE SECTION AT THE TOP
+
+.top_white {
+  @include span(8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+  @include cf();
+  background-color: #fff;
+  border-radius: 50px 50px 0px 0px;
+  color: #D6F1F0;
+  padding: 0px;
+
+  // FIRST COLUMN OF TOP WHITE SECTION
+
+  .tw_1 img {
+    @include span(1/2);
+    @include breakpoint(tablet) {
+      @include stack();
+    margin-top: -12%;
+    margin-bottom: 1%;
+    }
+    margin-top: -6%;
+    margin-bottom: 1%;      // This makes the owls stick up over the white part.
+  }
+
+  // SECOND COLUMN OF THE TOP WHITE SECTION
+
+  .tw_2 {
+    @include span(1/2); // FIRST FRACTION IS THIS COLUMN, SECOND FRACTION IS PARENT SECTION
+    //margin: 0px;
+    @include breakpoint(tablet) {
+      @include stack();
+    }
+    ul {
+      padding: 0px;
+      width: 100%;
+      position: center;
+    }
+
+    li {
+      @include cf();
+      @include col(1/4 1/2 4/5);    // EACH LIST ITEM IS GOING TO OCCUPY ONE -- OF FOUR -- COLUMNS
+      list-style: none;
+      display: inline;
+      font-family: 'Helvetica';
+      font-weight: lighter;
+      font-size: 16px;
+      color: #5FAEB4;
+      text-align: center;
+      border-radius: 50px;
+      padding: 1% 1% 0.4% 1%;
+      margin: 0 0.15%;
+    }
+  }
+
+  li:nth-child(1) {      // THIS SECTION IS STYLING THE FAKE "BUTTONS" IN THE LIST AT THE TOP
+    background-color: #77CCD1;
+    color: #FFF;
+  }
+  li:nth-child(2) {
+    background-color: #8AB93A;
+    color: #FFF;
+  }
+  li:nth-child(3) {
+    background-color: #71288C;
+    color: #FFF;
+  }
+  li:nth-child(4) {
+    background-color: #EB008A;
+    color: #FFF;
+  }
+
+
+// THIS SECTION IS THE BOTTOM HALF OF THE SECOND COLUMN IN THE TOP WHITE SECTION
+
+  .tw_3 {
+    @include span(1/2);  // AGAIN, THE FIRST FRACTION IS THE AMOUNT OF THE PARENT THAT THIS COLUMN TAKES
+    @include breakpoint(tablet) {
+      @include stack();
+    }
+    height: 50%;
+    vertical-align: middle;
+    img {
+    vertical-align: middle;
+    max-width: 100%;
+    }                  // THE SECOND FRACTION TELLS HOW MUCH -- IN TOTAL -- THE PARENT DIV (TOP_WHITE) TAKES UP
+  }
+}
+
+
+
+
+// THIS IS THE PINK NAV BAR THAT DIVIDES THE TOP FROM THE BOTTOM
+
+.pink_bar {
+  @include center(12/12);
+  background-color: #F5CAD2;
+  font-family: 'Corben', Georgia, Times, serif;
+  font-size: 12px;
+  font-style: thick;
+
+  ul {
+    @include cf();
+    text-align: center;
+    padding: 3px 0px 0px 0px;
+    margin: 2px;
+
+
+
+  li {
+    @include col(2.25/12 12/12);
+    list-style: none;
+    display: inline;
+    color: #6E0F47;
+    margin: 0px;
+    white-space: nowrap;
+    padding: 9px 0px 0px 0px;
+    // border-radius: 50px 50px 50px 50px;
+
+
+  input {
+    @include col(2/12 12/12);
+    padding: 0px;
+    border-radius: 15px;
+    margin: 0px 0px 0px 20px;
+    width: 100%;
+  }
+  }
+  }
+}
+

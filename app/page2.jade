@@ -7,25 +7,34 @@ head
   link(rel="stylesheet", href="css/main.css")
   link(href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css")
 
-  // TOP TEAL IS THE TOPMOST GREEN SECTION
+body
 
-  body
-    //HEADER SECTION
+  include partials/_header.jade
 
-    include partials/header.jade
+  include partials/_pinkNav.jade
 
-    //PINK NAV BAR
+  .bottom_white
 
-    include partials/nav.jade
+  include partials/_sidebarP2.jade
 
-    //STORE CONTENT 
+ .crumb_nav
+   p All > Twin > B/G
+   p.sort_by
+     label(for='sort') Sort by:
+     select(id='sort')
+       option Price
 
-    include partials/body.jade
+  .nav_results
+     a(href='google.com') prev
+     a(href='#') |
+     a(href='google.com') page num.
+     a(href='#') |
+     a(href='google.com') next
+     a(href='#') |
+     a(href='google.com') view all
 
 
-    //FOOTER SECTION
-
-    include partials/footer.jade
+  include partials/_footerAll.jade
 
 
 
