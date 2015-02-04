@@ -60,22 +60,18 @@ form {
 	padding: 0;
 }
 
-//Styles the results grid 
-	
-.results_grid1 > table{
-	@include span(2/3);
-	// @include center();
-	margin-top: 50px;
-	td {
-		display: inline-block;
-		text-align: center;
-		padding: 50px;
-		margin: 25px;
-		background-color: #EAFAC6;
-		
-	}
+#itemDisplay {
+  @include span(6/8,8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift(4/8);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+  @include cf();
+  background-color: #fff;
+  color: #81ae28;
+  padding: 0;
+
+  img {
+  width: 150px;
+  height: 150px;
+  }
 }
-
-
 
 
