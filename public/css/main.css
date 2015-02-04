@@ -218,26 +218,33 @@ form {
   .sort_by select {
     display: inline; }
 
-.results_grid1 > table {
+#itemDisplay {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 66.6666666667%;
-  margin-left: 0%;
+  width: 75%;
+  margin-left: 80%;
   margin-right: 0%;
-  margin-top: 50px; }
-  .results_grid1 > table:before, .results_grid1 > table:after {
+  position: relative;
+  left: 51.5%;
+  *zoom: 1;
+  background-color: #fff;
+  color: #81ae28;
+  padding: 0; }
+  #itemDisplay:before, #itemDisplay:after {
     content: '';
     display: table; }
-  .results_grid1 > table:after {
+  #itemDisplay:after {
     clear: both; }
-  .results_grid1 > table td {
-    display: inline-block;
-    text-align: center;
-    padding: 50px;
-    margin: 25px;
-    background-color: #EAFAC6; }
+  #itemDisplay:before, #itemDisplay:after {
+    content: '';
+    display: table; }
+  #itemDisplay:after {
+    clear: both; }
+  #itemDisplay img {
+    width: 150px;
+    height: 150px; }
 
 body {
   *zoom: 1;
