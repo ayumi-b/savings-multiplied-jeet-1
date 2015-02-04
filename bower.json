@@ -11,6 +11,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jeet": "~6.1.2"
+    "jeet": "~6.1.2",
+    "moment": "~2.9.0"
   }
 }
