@@ -22,7 +22,7 @@
                       + title + '</div><div>'
                       +'$' + price + '</div><div>'
                       + seller + '</div><div>'
-                      +'Item expires ' endDate + '</div></figure>');
+                      +'Item expires ' + endDate + '</div></figure>');
        $('#itemDisplay').append($figure);
      });
    });

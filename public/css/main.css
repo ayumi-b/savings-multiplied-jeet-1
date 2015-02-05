@@ -218,31 +218,31 @@ form {
   .sort_by select {
     display: inline; }
 
-#itemDisplay {
+figure {
+  /*@include span(6/8,8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS*/
+  /*@include shift(1/8);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN*/
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 75%;
-  margin-left: 80%;
-  margin-right: 0%;
-  position: relative;
-  left: 51.5%;
-  *zoom: 1;
-  background-color: #fff;
+  width: 13.4285714286%;
+  margin-left: 0%;
+  margin-right: 1%;
+  background-color: #EAFAC6;
+  font-size: 0.8em;
   color: #81ae28;
   padding: 0; }
-  #itemDisplay:before, #itemDisplay:after {
+  figure:before, figure:after {
     content: '';
     display: table; }
-  #itemDisplay:after {
+  figure:after {
     clear: both; }
-  #itemDisplay:before, #itemDisplay:after {
-    content: '';
-    display: table; }
-  #itemDisplay:after {
+  figure:nth-child(4n) {
+    margin-right: 0%;
+    float: right; }
+  figure:nth-child(4n+1) {
     clear: both; }
-  #itemDisplay img {
+  figure img {
     width: 150px;
     height: 150px; }
 
