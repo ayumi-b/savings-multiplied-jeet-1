@@ -73,12 +73,14 @@ head
           select
             <option value="Gerbers">Gerbers
             <option value="Tyco">Tyco
-            <option value="Baby Co">Baby Co
+        <option value="Baby Co">Baby Co
 
 
       // THIS IS THE 'SEARCH ALL, TWIN, BOY/GIRL' SECTION
       .crumb_nav
-      p All > Twin > B/G
+        a  All  >
+        a  Twin  >
+        a  B/G
 
       .sort_by
         label(for='sort') Sort by:
@@ -87,14 +89,14 @@ head
 
 
         // THIS IS THE 'PREVIOUS, PAGE NUMBER, NEXT, VIEW ALL' NAVIGATION SECTION
-        .nav_results
-          a(href='google.com') prev
-          a(href='#') |
-          a(href='google.com') page num.
-          a(href='#') |
-          a(href='google.com') next
-          a(href='#') |
-          a(href='google.com') view all
+      .nav_results
+        a(href='google.com') prev
+        a(href='#') |
+        a(href='google.com') page num.
+        a(href='#') |
+        a(href='google.com') next
+        a(href='#') |
+        a(href='google.com') view all
 
 
       // THIS IS WHERE THE 'SEARCHED' ITEMS WILL DISPLAY

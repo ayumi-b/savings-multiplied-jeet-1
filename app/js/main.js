@@ -17,10 +17,10 @@
 
 
   //CREATING A BLOCK OF ITEMS
-      var $figure = $('<figure><div><img src="' + image + '"></div><div>'
-                      + title + '</div><div>'
-                      +'$' + price + '</div><div>'
-                      + seller + '</div><div>'
+      var $figure = $('<figure><div><img src="' + image + '"></div><div class="title">'
+                      + title + '</div><div class="price">'
+                      +'$' + price + '</div><div class="seller">'
+                      + seller + '</div><div class="endDate">'
                       + endDate + '</div></figure>');
        $('#itemDisplay').append($figure);
      });
