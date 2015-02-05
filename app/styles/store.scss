@@ -2,7 +2,7 @@
   @include col(1/3 8/10);
   background-color: white;
   margin: 0;
-  color: #7dae27;
+  color: $medium-green;
   margin-bottom: 40px;
 }
 
@@ -12,13 +12,13 @@
   margin: 0;
 
   p {
-    color: #7dae27;
+    color: $medium-green;
   }
 
-.sort_by {
-  background-color: white;
-  float: left;
-  }
+  .sort_by {
+    background-color: white;
+    float: left;
+    }
 }
 
 
@@ -27,19 +27,19 @@
 form {
   label {
     display: block;
-    color: #7DAE27;
+    color: $medium-green;
   }
   p {
-    color: #7DAE27;
+    color: $medium-green;
   }
 
-  background-color: #EAFAC6;
+  background-color: $light-green;
   margin: 10px;
   padding: 15px;
   border-radius: 25px;
 
   input [type="radio"] {
-    color: #7dae27;
+    color: $medium-green;
   }
 }
 
@@ -50,7 +50,7 @@ form {
   float: right;
 
   a:link {
-    color: #7dae27;
+    color: $medium-green;
     text-decoration: none;
     padding: 5px;
   }
@@ -71,20 +71,17 @@ form {
 
 //Styles the results grid
 
-.results_grid1 > table{
-  @include span(2/3);
-  // @include center();
-  margin-top: 50px;
+#itemDisplay {
+  @include col (1/4, $cycle:4);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift (4/8);
+  @include cf();
+  background-color: #fff;
+  color: $medium-green;
+  padding: 0;
 
-  td {
-    display: inline-block;
-    text-align: center;
-    padding: 50px;
-    margin: 25px;
-    background-color: #EAFAC6;
-  }
+   img {
+    max-width: 150px;
+    max-height: 150px;
+   }
 }
-
-
-
 

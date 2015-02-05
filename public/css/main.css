@@ -132,7 +132,7 @@
  * Apply a clearfix to an element.
  */
 h1 {
-  color: #ABC123; }
+  color: #8AB93A; }
 
 h2 {
   font-family: 'Corben', Georgia, Times, serif;
@@ -144,7 +144,7 @@ h3 {
   font-family: 'Helvetica', sans-serif;
   font-style: thin;
   font-size: 16px;
-  color: #77CCD2;
+  color: #76C7CD;
   padding: 10px 0px 0px 0px; }
 
 .fm_1 {
@@ -157,7 +157,7 @@ h3 {
   margin-right: 3.7783375315%;
   background-color: white;
   margin: 0;
-  color: #7dae27;
+  color: #8AB93A;
   margin-bottom: 40px; }
   .fm_1:before, .fm_1:after {
     content: '';
@@ -185,29 +185,29 @@ h3 {
   .crumb_nav:last-child {
     margin-right: 0%; }
   .crumb_nav p {
-    color: #7dae27; }
+    color: #8AB93A; }
   .crumb_nav .sort_by {
     background-color: white;
     float: left; }
 
 form {
-  background-color: #EAFAC6;
+  background-color: #ECFAD3;
   margin: 10px;
   padding: 15px;
   border-radius: 25px; }
   form label {
     display: block;
-    color: #7DAE27; }
+    color: #8AB93A; }
   form p {
-    color: #7DAE27; }
+    color: #8AB93A; }
   form input [type="radio"] {
-    color: #7dae27; }
+    color: #8AB93A; }
 
 .nav_results {
   display: inline;
   float: right; }
   .nav_results a:link {
-    color: #7dae27;
+    color: #8AB93A;
     text-decoration: none;
     padding: 5px; }
 
@@ -218,26 +218,38 @@ form {
   .sort_by select {
     display: inline; }
 
-.results_grid1 > table {
+#itemDisplay {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 66.6666666667%;
+  width: 22.75%;
   margin-left: 0%;
-  margin-right: 0%;
-  margin-top: 50px; }
-  .results_grid1 > table:before, .results_grid1 > table:after {
+  margin-right: 3%;
+  position: relative;
+  left: 51.5%;
+  *zoom: 1;
+  background-color: #fff;
+  color: #8AB93A;
+  padding: 0; }
+  #itemDisplay:before, #itemDisplay:after {
     content: '';
     display: table; }
-  .results_grid1 > table:after {
+  #itemDisplay:after {
     clear: both; }
-  .results_grid1 > table td {
-    display: inline-block;
-    text-align: center;
-    padding: 50px;
-    margin: 25px;
-    background-color: #EAFAC6; }
+  #itemDisplay:nth-child(4n) {
+    margin-right: 0%;
+    float: right; }
+  #itemDisplay:nth-child(4n+1) {
+    clear: both; }
+  #itemDisplay:before, #itemDisplay:after {
+    content: '';
+    display: table; }
+  #itemDisplay:after {
+    clear: both; }
+  #itemDisplay img {
+    max-width: 150px;
+    max-height: 150px; }
 
 body {
   *zoom: 1;
