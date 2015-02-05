@@ -10,7 +10,7 @@
   $.get(FIREBASE_URL, function(data) {
           console.log(data);
     _.forEach(data, function(item){
-     var  endDate = item.endDate,
+     var  endDate = moment(item.endDate).fromNow(),
           image = item.image,
           price = item.price,
           seller = item.seller,
@@ -22,7 +22,7 @@
                       + title + '</div><div>'
                       +'$' + price + '</div><div>'
                       + seller + '</div><div>'
-                      + endDate + '</div></figure>');
+                      +'Item expires ' endDate + '</div></figure>');
        $('#itemDisplay').append($figure);
      });
    });

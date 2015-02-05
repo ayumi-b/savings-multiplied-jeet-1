@@ -60,10 +60,10 @@ form {
 	padding: 0;
 }
 
-#itemDisplay {
+figure {
   @include span(6/8,8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
-  @include shift(4/8);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
-  @include cf();
+  /*@include shift(1/8);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN*/
+  @include col(1/4, $cycle: 4);
   background-color: #fff;
   color: #81ae28;
   padding: 0;

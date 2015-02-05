@@ -1,0 +1,22 @@
+.yayItems {
+  @include span(6/8,8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift(4/8);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+  @include cf();
+  background-color: #fff;
+  color: #D6F1F0;
+  padding: 0px;
+
+
+       ////figure(id="itemDisplay")
+           //div
+             //image
+           //div
+             //title
+           //div
+             //price
+           //div
+             //seller
+           //div
+             //endDate
+
+
