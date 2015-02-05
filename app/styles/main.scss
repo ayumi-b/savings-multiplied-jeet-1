@@ -1,6 +1,6 @@
 @import "../../bower_components/jeet/scss/jeet/index";
 @import "variables";
-@import "headings"; 
+@import "headings";
 @import "store.scss";
 
 
@@ -31,7 +31,7 @@ li {
 }
 
 
-// MAIN CONTAINER FOR THE WHITE SECTION AT THE TOP 
+// MAIN CONTAINER FOR THE WHITE SECTION AT THE TOP
 
 .top_white {
   @include span(8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
@@ -63,7 +63,7 @@ li {
     @include breakpoint(tablet) {
       @include stack();
     }
-    ul {  
+    ul {
       padding: 0px;
       width: 100%;
       position: center;
@@ -81,7 +81,7 @@ li {
       text-align: center;
       border-radius: 50px;
       padding: 1% 1% 0.4% 1%;
-      margin: 0 0.15%;  
+      margin: 0 0.15%;
     }
   }
 
@@ -121,8 +121,8 @@ li {
 
 
 
-   
-// THIS IS THE PINK NAV BAR THAT DIVIDES THE TOP FROM THE BOTTOM 
+
+// THIS IS THE PINK NAV BAR THAT DIVIDES THE TOP FROM THE BOTTOM
 
 .pink_bar {
   @include center(12/12);
@@ -132,34 +132,33 @@ li {
   font-style: thick;
 
   ul {
-    @include cf();  
+    @include cf();
     text-align: center;
     padding: 3px 0px 0px 0px;
     margin: 2px;
-    
 
- 
-  li {            
-    @include col(2.25/12 12/12);
-    list-style: none;
-    display: inline;
-    color: #6E0F47;
-    margin: 0px;
-    white-space: nowrap;
-    padding: 9px 0px 0px 0px;
-    // border-radius: 50px 50px 50px 50px;
 
-      
-  input {                      
-    @include col(2/12 12/12);
-    padding: 0px;
-    border-radius: 15px;
-    margin: 0px 0px 0px 20px;
-    width: 100%;
-  } 
+    li {
+      @include col(2.25/12 12/12);
+      list-style: none;
+      display: inline;
+      color: #6E0F47;
+      margin: 0px;
+      white-space: nowrap;
+      padding: 9px 0px 0px 0px;
+      // border-radius: 50px 50px 50px 50px;
+
+
+      input {
+        @include col(2/12 12/12);
+        padding: 0px;
+        border-radius: 15px;
+        margin: 0px 0px 0px 20px;
+        width: 100%;
+      }
+    }
   }
-  }
-}  
+}
 
 
 
@@ -173,7 +172,7 @@ li {
   padding: 0px 0px 0px 0px;
 
   .bt_1 {
-    @include span (1/2); 
+    @include span (1/2);
     padding: 15px 0px 0px 0px;
     margin: 0px;
 
@@ -194,7 +193,7 @@ li {
       padding: 100px 0px 75px 20px;
       margin: 0px;
     }
-  } 
+  }
 
   .bt_2 {
     @include cf();
@@ -202,7 +201,7 @@ li {
     //@include shift(1/2);
     margin: 0px;
     padding: 20px 0px 0px 0px;
-  } 
+  }
 
   .bt_2 img {
     @include center();
@@ -223,8 +222,8 @@ li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }   
-} 
+  }
+}
 
 // THIS IS THE BOTTOM (DARKER TEAL) BACKGROUND CONTAINER
 
@@ -234,11 +233,10 @@ li {
   background-color: #77CCD2;
   padding: 40px 0px;
   font-size: 12px;
-  
 
-  
+
   ul {
-    @include cf();  
+    @include cf();
     text-align: center;
     padding: 0px;
 
@@ -251,13 +249,13 @@ li {
 
   li:nth-child(even) {
     @include col(0.25/10 12/12);
-    @include shift(1.25/10); 
+    @include shift(1.25/10);
     color: #D6F1F0;
   }
-  
 
- 
-  li {            
+
+
+  li {
     list-style: none;
     display: inline-block;
     padding: 0px;

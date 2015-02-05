@@ -1,79 +1,88 @@
 .fm_1 {
-	@include col(1/3 8/10);
-	background-color: white;
-	margin: 0;
-	color: #7dae27;
-	margin-bottom: 40px;
+  @include col(1/3 8/10);
+  background-color: white;
+  margin: 0;
+  color: #7dae27;
+  margin-bottom: 40px;
 }
 
 .crumb_nav {
-	@include col(2/3 8/10);
-	background-color: white;
-	margin: 0;
-	p {
-		color: #7dae27;
-	}
-	.sort_by {
-		background-color: white;
-		float: left;
-	}
+  @include col(2/3 8/10);
+  background-color: white;
+  margin: 0;
+
+  p {
+    color: #7dae27;
+  }
+
+.sort_by {
+  background-color: white;
+  float: left;
+  }
 }
 
 
 //This is the styling for the search form on the left column
+
 form {
-	label {
-		display: block;	
-		color: #7DAE27;
-	}
-	p {
-		color: #7DAE27;
-	}
-	background-color: #EAFAC6;
-	margin: 10px;
-	padding: 15px;
-	border-radius: 25px;
-	input [type="radio"] {
-		color: #7dae27;
-	}
+  label {
+    display: block;
+    color: #7DAE27;
+  }
+  p {
+    color: #7DAE27;
+  }
+
+  background-color: #EAFAC6;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 25px;
+
+  input [type="radio"] {
+    color: #7dae27;
+  }
 }
 
 //This styles the navigation resultson the right corner
+
 .nav_results {
-		display: inline;
-		float: right;
-		a:link {
-			color: #7dae27;
-			text-decoration: none;
-			padding: 5px;
-		}
+  display: inline;
+  float: right;
+
+  a:link {
+    color: #7dae27;
+    text-decoration: none;
+    padding: 5px;
+  }
 }
 
 //Styles the sort options above search results
+
 .sort_by {
-	display: inline-block;
-	// float: left;
-	select {
-		display: inline;
-	}
-	margin: 0;
-	padding: 0;
+  display: inline-block;
+  // float: left;
+  select {
+    display: inline;
+  }
+
+  margin: 0;
+  padding: 0;
 }
 
-//Styles the results grid 
-	
+//Styles the results grid
+
 .results_grid1 > table{
-	@include span(2/3);
-	// @include center();
-	margin-top: 50px;
-	td {
-		display: inline-block;
-		text-align: center;
-		padding: 50px;
-		margin: 25px;
-		background-color: #EAFAC6;
-		
-	}
+  @include span(2/3);
+  // @include center();
+  margin-top: 50px;
+
+  td {
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+    margin: 25px;
+    background-color: #EAFAC6;
+  }
 }
 
 
