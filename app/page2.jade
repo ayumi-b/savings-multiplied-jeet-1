@@ -5,36 +5,117 @@ head
   meta(http-equiv="X-UA-Compatible", content="IE=edge")
   meta(name="viewport", content="width=device-width, initial-scale=1")
   link(rel="stylesheet", href="css/main.css")
+  link(rel="stylesheet", href="css/store.css")
   link(href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css")
 
   body
-    include partials/headerAll.jade
+    //HEADER SECTION
+
+    include partials/pagetop.jade
+
+    //PINK NAV BAR
 
     include partials/pinkNav.jade
 
+    //PAGE TWO CONTENT (SEARCH FORM AND STORE CONTENT)
+
+    include partials/page2content.jade
+
     .bottom_white
 
-    include partials/sidebarP2.jade
+      // THE 'FORM' SECTION IS A GREEN SEARCH SIDEBAR AREA
+      .form
+        .fm_1
+          div#contact-area
+          form(method='post',action='')
+            label Limit your search by:
+            hr
+            input(type='text',name='email',id='email')
 
-    .crumb_nav
-      p All  Twin  B/G
+            input(type='submit',name='submit',value='Search').submit-button
+            label(for='condition') Condition:
+            <input type="radio" name="condition" value="new">New
+            <br>
+            <input type="radio" name="condition" value="used">Gently Used
+            label(for='condition') Size:
+            <input type="radio" name="size" value="4"> 4
+            <input type="radio" name="size" value="8"> 8
+            <br>
+            <input type="radio" name="size" value="5"> 5
+            <input type="radio" name="size" value="9"> 9
+            <br>
+            <input type="radio" name="size" value="6"> 6
+            <input type="radio" name="size" value="10"> 10
+            <br>
+            <input type="radio" name="size" value="7"> 7
+            <input type="radio" name="size" value="11"> 11
+            <br>
+            label(for='condition') Season:
+            <input type="radio" name="season" value="all" >All Seasons
+            <br>
+            <input type="radio" name="season" value="spring" >Spring
+            <br>
+            <input type="radio" name="season" value="summer" >Summer
+            <br>
+            <input type="radio" name="season" value="fall" >Fall
+            <br>
+            <input type="radio" name="season" value="winter" >Winter
+            <br>
+            label(for='condition') Type:
+            <input type="radio" name="type" value="all">Any
+            <br>
+            <input type="radio" name="type" value="one-piece">One-Piece
+            <br>
+            <input type="radio" name="type" value="tops">Tops
+            <br>
+            <input type="radio" name="type" value="bottoms">Bottoms
+            <br>
+            label(for='condition') Brand:
+            select
+            <option value="Gerbers">Gerbers
+            <option value="Tyco">Tyco
+            <option value="Baby Co">Baby Co
 
-    .sort_by
-      label(for='sort') Sort by:
-        select(id='sort')
-        option Price
 
-    .nav_results
-      a(href='google.com') prev
-      a(href='#') |
-      a(href='google.com') page num.
-      a(href='#') |
-      a(href='google.com') next
-      a(href='#') |
-      a(href='google.com') view all
+       // THIS IS THE 'ALL, TWIN, BOY/GIRL' SEARCH SECTION ON THE RIGHT
+
+      .crumb_nav
+        p All > Twin > B/G
 
 
-    include partials/footerAll
+      // THIS IS THE 'SORT BY' DROPDOWN MENU ON THE RIGHT
 
+      .sort_by
+        label(for='sort') Sort by:
+          select(id='sort')
+          option Price
+          option Size
+          option End Date
+
+
+     // THIS IS THE 'PREV, PAGE, NEXT, ALL' NAVIGATION SECTION ON THE RIGHT
+      .nav_results
+        a(href='google.com') prev
+        a(href='#') |
+        a(href='google.com') page num.
+        a(href='#') |
+        a(href='google.com') next
+        a(href='#') |
+        a(href='google.com') view all
+
+
+    // THIS SECTION DISPLAYS THE SEARCH RESULTS
+
+
+
+
+
+
+
+
+
+    //FOOTER SECTION
+
+    include partials/pagebottom.jade
 
 

@@ -1,5 +1,4 @@
-
-// COLORS
+//COLORS
 
 $dull-pink: #F4CAD2;
 $dark-teal: #76C7CD;
@@ -10,10 +9,7 @@ $medium-green: #8AB93A;
 $purple: #71288B;
 $hotpink: #EB008A;
 
-
-
-
-
+//RESPONSIVENESS
 
 @mixin breakpoint($point) {
    @if $point == desktop {
@@ -34,4 +30,3 @@ $hotpink: #EB008A;
   }
 }
 
-+

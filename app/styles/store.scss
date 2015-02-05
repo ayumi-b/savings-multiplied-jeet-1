@@ -12,6 +12,14 @@
 // THIS STYLES THE GREEN SEARCH SECTION ON THE LEFT-HAND SIDE
 // IT'S CURRENTLY TAKING UP ABOUT 1/3 OF THE PARENT DIV
 
+
+.bottom_white {
+  @include span(8/10);   //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+  @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+  background-color: #fff;
+  border-radius: 0px 0px 50px 50px;
+  padding: 0px 0px 0px 0px;
+
 .form {
   @include col(2/8 8/10);
   label {
@@ -62,8 +70,6 @@
   }
 }
 
-
-
 .nav_results {
   @include col(2/8 8/10);
   display: inline;
@@ -107,7 +113,6 @@
   padding: 40px 0px;
   font-size: 12px;
 
-
   ul {
     @include cf();
     text-align: center;
@@ -117,6 +122,7 @@
     @include col(0.95/10 12/12);
     span: (1/5);
     @include shift(1.25/10);
+    border-right: solid, 2px, $light-teal;
     color: $light-teal;
   }
 

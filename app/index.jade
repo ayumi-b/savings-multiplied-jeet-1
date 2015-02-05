@@ -5,29 +5,17 @@ head
   meta(http-equiv="X-UA-Compatible", content="IE=edge")
   meta(name="viewport", content="width=device-width, initial-scale=1")
   link(rel="stylesheet", href="css/main.css")
+  link(rel="stylesheet", href="css/store.css")
   link(href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css")
 
-  // TOP TEAL IS THE TOPMOST GREEN SECTION
-
   body
-    include partials/headerAll.jade
+    include partials/pageTop.jade
 
     // THIS IS THE PINK NAV BAR
 
-    .pink_bar
-      ul
-        li
-          a(href="page2.html") Buy
+    include partials/pinkNav.jade
 
-        li Sell
-        li How it Works
-        li Links
-        li Community
-        li
-          input(type="text", class="pillbox_button", placeholder="Search")
-
-
-    // THIS IS THE BOTTOM WHITE SPACE
+    // THIS IS THE PRIMARY CONTENT AREA FOR THE HOME PAGE (PAGE 1)
 
     .bottom_white
 
@@ -58,18 +46,5 @@ head
 
     // THIS IS THE BOTTOM TEAL SPACE
 
-    .bottom_teal
-      ul
-        li link here
-        li |
-        li link here
-        li |
-        li link here
-        li |
-        li link here
-        li |
-        li link here
-        li |
-        li link here
-
+    include partials/pageBottom.jade
 
