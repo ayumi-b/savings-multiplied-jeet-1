@@ -2,99 +2,100 @@
 @import "variables";
 @import "headings";
 
+.fm_1 {
+  @include col(1/3 8/10);
+  background-color: white;
+  margin: 0;
+  color: $medium-green;
+  margin-bottom: 40px;
+}
 
-//THIS IS BOTTOM MIDDLE WHITE SECTION
-
-.bottom_white {
-  @include span(8/10);   //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
-  @include shift(1/10);   // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
-  background-color: #fff;
-  border-radius: 0px 0px 50px 50px;
-  padding: 0px 0px 0px 0px;
-
-
-  .fm_1 {
-    @include col(1/3 8/10);
-    background-color: white;
-    margin: 0;
+//This is the styling for the search form on the left column
+form {
+  label {
+    display: block;
     color: $medium-green;
-    margin-bottom: 40px;
+  }
+  p {
+    color: $medium-green;
+  }
+  background-color: $light-green;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 25px;
+  input [type="radio"] {
+    color: $medium-green;
+  }
+}
 
-    form {
-      label {
-        display: block;
-        color: $medium-green;
-        padding-top: 15px;
-        text-align: left;
-      }
-      p {
-        color: $medium-green;
-      }
 
-      background-color: $light-green;
-      margin: 10px 10px 10px 25px;
-      padding: 15px;
-      border-radius: 25px;
+// This is the 'All > Twin > Boy/Girl section on the right
 
-      input [type="radio"] {
-        color: $medium-green;
-        margin: 50px;
-      }
+.crumb_nav {
+  @include col(2/3 8/10);
+  top-padding: 20px;
+  p {
+    color: $medium-green;
+    top-margin: 10px;
+    font-size: 1.25em;
+  }
+}
+
+
+//Styles the sort options above search results
+.sort-section {
+  @include col(2/3 8/10);
+  margin: 0;
+
+  .sort_by {
+    @include col(1/3 8/10);
+    display: inline-block;
+    background-color: white;
+    color: $medium-green;
+    margin: 0;
+    select {
+      display: inline;
+      color: $medium-green;
     }
   }
 
-    .crumb_nav {
-      @include col(1.25/3 2/3 8/10);
-      background-color: white;
-      color: $medium-green;
-      margin-top: 20px;
-    }
+  //This styles the navigation resultson the right corner
+  .nav_results {
+    @include col(2/3 8/10);
+    @include cf();
+    background-color: white;
+    display: inline;
+    text-align: right;
+    padding: 0px 0px 0px 2px;
+    float: right;
+    margin: 0;
 
-
-    .sort_by {
-      @include col(1.25/3 2/3 8/10);
-      @include cf();
-      background-color: white;
-      color: $medium-green;
-      float: left;
-      display: inline-block;
-        select {
-          display: inline;
-        }
-      margin: 10px 0px;
-      padding: 10px, 5px;
-    }
-
-    //This styles the navigation results on the right corner
-
-    .nav_results {
-      @include col(1.25/3 2/3 8/10);
-      @include cf();
-      text-align: right;
-      display: inline;
-
-      a:link {
+      a {
         color: $medium-green;
         text-decoration: none;
         padding: 5px;
       }
-    }
+  }
 
-    //Styles the sort options above search results
-    //Styles the results grid
-
-    #itemDisplay {
-      @include col (1/4, $cycle: 6);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
-      background-color: #fff;
+  #itemDisplay {
+    //@include col(2/3 8/10);
+    @include cf();
+    padding-top: 50px;
+    //@include span(6/8,8/10);     //  THIS SETS THE DIV TO TAKE UP 8 OUT OF TEN COLUMNS
+    //@include shift(1/8);         // THIS MOVES THE ELEMENT OVER BY ONE COLUMN
+    figure {
+      //@include col(1/8, $cycle: 4, $gutter: 1);
+      background-color: $light-green;
+      font-size: .8em;
       color: $medium-green;
-      margin: 0px;
-      padding: 0;
-      display: inline;
-
-       img {
-        max-width: 100px;
-        max-height: 100px;
-       }
+      text-align: center;
+      //padding: 5px;
+      //width: 100%;
+    
+      img {
+      max-width: 100px;
+      max-height: 100px;
+      }
     }
-  
+  }
 }

@@ -8,107 +8,21 @@ head
   link(href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css")
 
   // TOP TEAL IS THE TOPMOST GREEN SECTION
-
+  
   body
-
     //HEADER SECTION
-
     include partials/header.jade
 
     //PINK NAV BAR
-
     include partials/nav.jade
 
+    //STORE CONTENT 
+    include partials/body.jade
 
-    // THIS IS THE BOTTOM WHITE SPACE
-
-    .bottom_white
-
-      .fm_1
-        //Form Area
-        div#contact-area
-        form(method='post',action='')
-          label Limit your search by:
-          hr
-          input(type='text',name='email',id='email')
-          input(type='submit',name='submit',value='Search').submit-button
-          label(for='condition') Condition:
-          <input type="radio" name="condition" value="new">New
-          <br>
-          <input type="radio" name="condition" value="used">Gently Used
-          label(for='condition') Size:
-          <input type="radio" name="size" value="4"> 4
-          <input type="radio" name="size" value="8"> 8
-          <br>
-          <input type="radio" name="size" value="5"> 5
-          <input type="radio" name="size" value="9"> 9
-          <br>
-          <input type="radio" name="size" value="6"> 6
-          <input type="radio" name="size" value="10"> 10
-          <br>
-          <input type="radio" name="size" value="7"> 7
-          <input type="radio" name="size" value="11"> 11
-          <br>
-          label(for='condition') Season:
-          <input type="radio" name="season" value="all" >All Seasons
-          <br>
-          <input type="radio" name="season" value="spring" >Spring
-          <br>
-          <input type="radio" name="season" value="summer" >Summer
-          <br>
-          <input type="radio" name="season" value="fall" >Fall
-          <br>
-          <input type="radio" name="season" value="winter" >Winter
-          <br>
-          label(for='condition') Type:
-          <input type="radio" name="type" value="all">Any
-          <br>
-          <input type="radio" name="type" value="one-piece">One-Piece
-          <br>
-          <input type="radio" name="type" value="tops">Tops
-          <br>
-          <input type="radio" name="type" value="bottoms">Bottoms
-          <br>
-          label(for='condition') Brand:
-          select
-            <option value="Gerbers">Gerbers
-            <option value="Tyco">Tyco
-        <option value="Baby Co">Baby Co
-
-
-      // THIS IS THE 'SEARCH ALL, TWIN, BOY/GIRL' SECTION
-      .crumb_nav
-        a  All  >
-        a  Twin  >
-        a  B/G
-
-      .sort_by
-        label(for='sort') Sort by:
-        select(id='sort')
-          option Price
-
-
-        // THIS IS THE 'PREVIOUS, PAGE NUMBER, NEXT, VIEW ALL' NAVIGATION SECTION
-      .nav_results
-        a(href='google.com') prev
-        a(href='#') |
-        a(href='google.com') page num.
-        a(href='#') |
-        a(href='google.com') next
-        a(href='#') |
-        a(href='google.com') view all
-
-
-      // THIS IS WHERE THE 'SEARCHED' ITEMS WILL DISPLAY
-
-      #itemDisplay
-
-
-    // FOOTER SECTION
-
-    include partials/footer.jade
+    //FOOTER SECTION
+    include partials/footer 
 
     script(src='//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js')
     script(src='//cdn.jsdelivr.net/lodash/3.0.0/lodash.min.js')
+    script(src='//cdn.jsdelivr.net/momentjs/2.9.0/moment.min.js')
     script(src='./js/main.js')
-

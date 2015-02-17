@@ -29,3 +29,30 @@ $hotpink: #EB008A;
 
   }
 }
+
+@media screen and (min-width: 450px) {
+    figure {
+        float: left;
+        width: 48.5%;
+        margin-left: 0%;
+        margin-right: 3%;
+    }
+ 
+    figure:nth-of-type(2n) {
+        float: right;
+        margin-right: 0%;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    figure {
+        @include col(1/2, $cycle: 2);
+    }
+}
+ 
+@media screen and (min-width: 800px) {
+    figure {
+        @include col(1/4, $cycle: 4, $uncycle: 2);
+    }
+}
+
