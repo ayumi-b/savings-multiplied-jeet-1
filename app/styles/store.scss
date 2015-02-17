@@ -12,18 +12,34 @@
 
 //This is the styling for the search form on the left column
 form {
-  label {
-    display: block;
-    color: $medium-green;
-  }
-  p {
-    color: $medium-green;
-  }
   background-color: $light-green;
   margin: 10px;
   padding: 15px;
   border-radius: 25px;
-  input [type="radio"] {
+
+  .submit-button {
+    background-color: $medium-green;
+    border-radius: 25px;
+    border: 0px;
+    color: white;
+  }
+
+  label {
+    display: block;
+    color: $medium-green;
+    padding-top: 15px;
+    font-size: 1.25em;
+  }
+
+  #search {
+    width: 70%;
+  }
+
+  #option {
+    margin-left: 50px;
+  }
+
+  select {
     color: $medium-green;
   }
 }
@@ -80,16 +96,15 @@ form {
   #itemDisplay {
     @include cf();
     padding-top: 50px;
-   
+
     figure {
-     background-color: $light-green;
       font-size: .8em;
       color: $medium-green;
       text-align: center;
-    
+
       img {
-      width: 100%;
-      height: 100%;
+      width: 100px;
+      height: 100px;
       }
     }
   }

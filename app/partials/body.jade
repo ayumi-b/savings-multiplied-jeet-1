@@ -5,48 +5,50 @@
     //Form Area
     div#contact-area
     form(method='post',action='')
+
       label Limit your search by:
       hr
-      input(type='text',name='email',id='email')  
+      input(type='text',name='search',id='search')
       input(type='submit',name='submit',value='Search').submit-button
+
       label(for='condition') Condition:
-      <input type="radio" name="condition" value="new">New
+      <input id="option" type="radio" name="condition" value="new"> New
       <br>
-      <input type="radio" name="condition" value="used">Gently Used
-      label(for='condition') Size:
-      <input type="radio" name="size" value="4"> 4
-      <input type="radio" name="size" value="8"> 8
+      <input id="option" type="radio" name="condition" value="used"> Gently Used
+
+      label(for='size') Size:
+      <input id="option" type="radio" name="size" value="4"> 4
+      <input id="option" type="radio" name="size" value="8"> 8
+      <input id="option" type="radio" name="size" value="5"> 5
+      <input id="option" type="radio" name="size" value="9"> 9
+      <input id="option" type="radio" name="size" value="6"> 6
+      <input id="option" type="radio" name="size" value="10"> 10
+      <input id="option" type="radio" name="size" value="7"> 7
+      <input id="option" type="radio" name="size" value="11"> 11
+
+
+      label(for='season') Season:
+      <input id="option" type="radio" name="season" value="all"> All Seasons
       <br>
-      <input type="radio" name="size" value="5"> 5
-      <input type="radio" name="size" value="9"> 9
+      <input id="option" type="radio" name="season" value="spring"> Spring
       <br>
-      <input type="radio" name="size" value="6"> 6
-      <input type="radio" name="size" value="10"> 10
+      <input id="option" type="radio" name="season" value="summer"> Summer
       <br>
-      <input type="radio" name="size" value="7"> 7
-      <input type="radio" name="size" value="11"> 11
+      <input id="option" type="radio" name="season" value="fall"> Fall
       <br>
-      label(for='condition') Season:
-      <input type="radio" name="season" value="all" >All Seasons
+      <input id="option" type="radio" name="season" value="winter"> Winter
+
+
+      label(for='type') Type:
+      <input id="option" type="radio" name="type" value="all"> Any
       <br>
-      <input type="radio" name="season" value="spring" >Spring
+      <input id="option" type="radio" name="type" value="one-piece"> One-Piece
       <br>
-      <input type="radio" name="season" value="summer" >Summer
+      <input id="option" type="radio" name="type" value="tops"> Tops
       <br>
-      <input type="radio" name="season" value="fall" >Fall
-      <br>
-      <input type="radio" name="season" value="winter" >Winter
-      <br>
-      label(for='condition') Type:
-      <input type="radio" name="type" value="all">Any
-      <br>
-      <input type="radio" name="type" value="one-piece">One-Piece
-      <br>
-      <input type="radio" name="type" value="tops">Tops
-      <br>
-      <input type="radio" name="type" value="bottoms">Bottoms
-      <br>
-      label(for='condition') Brand:
+      <input id="option" type="radio" name="type" value="bottoms"> Bottoms
+
+      label(for='brand') Brand:
       select
         <option value="Gerbers">Gerbers
         <option value="Tyco">Tyco
@@ -60,9 +62,9 @@
     .sort_by
       label Sort by:
         select
-          option value="Price"
-          option value="Size"
-          option value="Best Match"
+          <option value="Price">Price
+          <option value="Size">Size
+          <option value="Best Match">Best Match
 
     .nav_results
       a(href='#') prev
