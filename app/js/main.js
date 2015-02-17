@@ -1,6 +1,6 @@
 /* global $: false, _: false */
 
-(function () {
+(function () {  // Begin IIFE
   'use strict';
 
   $(document).ready(function(){});
@@ -10,26 +10,21 @@
   $.get(FIREBASE_URL, function(data) {
           console.log(data);
     _.forEach(data, function(item){
-     var  endDate = moment(item.endDate).fromNow(),
+     var  endDate = moment.utc(item.endDate).fromNow(),
           image = item.image,
           price = item.price,
           seller = item.seller,
           title = item.title;
 
-
-  //CREATING A BLOCK OF ITEMS
-      var $figure = $('<figure><div><img src="' + image + '"></div><div>'
-                      + title + '</div><div>'
-                      +'$' + price + '</div><div>'
-                      + seller + '</div><div>'
-                      +'Item expires ' + endDate + '</div></figure>');
-       $('#itemDisplay').append($figure);
-     });
+    var $figure = $('<figure><div><img src="' + image + '"></div><div>'
+                    + title + '</div><div>'
+                    +'$' + price + '</div><div>'
+                    + seller + '</div><div>'
+                    +'Item expires ' + endDate + '</div></figure>');
+     $('#itemDisplay').append($figure);
    });
+ });
 
 
 
-
-
-
-})();
+})(); // End IIFE 
